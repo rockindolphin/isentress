@@ -1,0 +1,34 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-14.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| Начни и продолжай АРВТ: 
+				span.text
+					| особенности режимов
+		main.slide__main
+			.diagram.diagram--box
+				header.diagram__header
+				main.diagram__main
+					img.scheme__img(src="images/slides/14/1.jpg")
+				footer.diagram__footer
+					.diagram__caption
+						| * более подробно см. в инструкции по применению. Некоторые препараты следует сочетать с другими средствами
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/up.png")
+						li.list__item
+							a.nav__item
+								.btn.btn--circle(data-popup-menu="popup-14")
+									img.scheme__img(src="images/menu.png")
+								.popup__wrapper.popup__wrapper--shadow-hidden
+									//-  POPUP 14 -//
+									+popup--menu('14')
+		+slide__footer('nav','data')

@@ -1,0 +1,9 @@
+@shift-left: @page-left + @page-main-left + @slide-main-left;
+
+.pane--wide{
+	margin-left: -1px*@shift-left;
+	padding-left: 1px*@shift-left;
+	margin-right: -1px*@page-right;
+	padding-right: 1px*@page-right;
+}
+

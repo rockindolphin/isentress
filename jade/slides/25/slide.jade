@@ -1,0 +1,22 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-25.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| SPIRAL: 
+				span.text
+					| Переключение на Исентресс (RAL) с ИП/р обеспечивает статистически значимое уменьшение показателей липидного профиля<sup>9</sup>
+		main.slide__main
+			.box
+				.diagram.diagram--box
+					header.diagram__header
+						.header__title
+							| Изменение уровня показателей липидного профиля от исходного к 48 неделе
+					main.diagram__main
+						img.scheme__img(src="images/slides/25/1.png")
+				footer.diagram__footer
+					.diagram__caption
+						| Martinez E, et al. AIDS. 2010;24:1697–1707
+		+slide__footer()

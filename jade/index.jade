@@ -1,0 +1,147 @@
+include mixins.jade
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, minimal-ui")
+		meta(name="apple-mobile-web-app-capable", content="yes")
+		meta(name="msapplication-tap-highlight", content="no")
+		title Isentress
+		link(rel="stylesheet", href="css/style.css")
+
+	body.page
+		include header.jade
+		main.page__main
+			.swiper-container.swiper__container
+				.swiper-wrapper.swiper__wrapper
+					
+					//-  SLIDE 1 -//
+					include slides/01/slide.jade
+
+					//-  SLIDE 2 -//
+					include slides/02/slide.jade
+
+					//-  SLIDE 3 -//
+					include slides/03/slide.jade
+
+					//-  SLIDE 4 -//
+					include slides/04/slide.jade
+
+					//-  SLIDE 5 -//
+					include slides/05/slide.jade
+
+					//-  SLIDE 6 -//
+					include slides/06/slide.jade
+				
+					//-  SLIDE 7 -//
+					include slides/07/slide.jade
+				
+					//-  SLIDE 8 -//
+					include slides/08/slide.jade
+
+					//-  SLIDE 9 -//
+					include slides/09/slide.jade
+					
+					//-  SLIDE 10 -//
+					include slides/10/slide.jade
+					
+					//-  SLIDE 11 -//
+					include slides/11/slide.jade
+					
+					//-  SLIDE 12 -//
+					include slides/12/slide.jade
+					
+					//-  SLIDE 13 -//
+					include slides/13/slide.jade
+					
+					//-  SLIDE 14 -//
+					include slides/14/slide.jade
+					
+					//-  SLIDE 15 -//
+					include slides/15/slide.jade
+					
+					//-  SLIDE 16 -//
+					include slides/16/slide.jade
+					
+					//-  SLIDE 17 -//
+					include slides/17/slide.jade
+					
+					//-  SLIDE 18 -//
+					include slides/18/slide.jade
+					
+					//-  SLIDE 19 -//
+					include slides/19/slide.jade
+					
+					//-  SLIDE 20 -//
+					include slides/20/slide.jade
+					
+					//-  SLIDE 21 -//
+					include slides/21/slide.jade
+					
+					//-  SLIDE 22 -//
+					include slides/22/slide.jade
+					
+					//-  SLIDE 23 -//
+					include slides/23/slide.jade
+					
+					//-  SLIDE 24 -//
+					include slides/24/slide.jade
+					
+					//-  SLIDE 25 -//
+					include slides/25/slide.jade
+					
+		include footer.jade
+		.page__popups.page__popups--shadow-hidden
+
+			//-  POPUP 9 -//
+			include popups/09/popup.jade			
+			
+			//-  POPUP 10 -//
+			include popups/10/popup.jade			
+		
+			//-  POPUP 11 -//
+			include popups/11/popup.jade			
+		
+			//-  POPUP 12 -//
+			include popups/12/popup.jade			
+		
+			//-  POPUP 12-2 -//
+			include popups/12-2/popup.jade			
+		
+			//-  POPUP 13 -//
+			include popups/13/popup.jade			
+				
+			//-  POPUP 15 -//
+			include popups/15/popup.jade			
+				
+			//-  POPUP 16 -//
+			include popups/16/popup.jade			
+				
+			//-  POPUP 17 -//
+			include popups/17/popup.jade			
+				
+			//-  POPUP 18 -//
+			include popups/18/popup.jade			
+				
+			//-  POPUP 19 -//
+			include popups/19/popup.jade			
+				
+			//-  POPUP 20 -//
+			include popups/20/popup.jade			
+				
+			//-  POPUP 20-3 -//
+			include popups/20-3/popup.jade			
+				
+			//-  POPUP 20-4 -//
+			include popups/20-4/popup.jade			
+				
+			//-  POPUP 20-5 -//
+			include popups/20-5/popup.jade			
+				
+			//-  POPUP 20-6 -//
+			include popups/20-6/popup.jade			
+							
+		script(src="js/jquery-3.2.1.slim.min.js")
+		script(src="js/swiper.min.js")
+		script(src="js/main.js")

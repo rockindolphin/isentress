@@ -1,0 +1,24 @@
+mixin slide__footer(name, data)
+	.slide__footer
+		.box--left
+			.footer__logo
+				img(src="images/logo.png", alt="Исентрес")
+		.box--right
+			.box--top
+				if name && name == 'nav'
+					+#{data}
+				.footer__tagline
+					span.text--green
+						| Начни 
+					span.text--pink
+						| и продолжай
+					div
+						| АРВТ сегодня ради завтра
+			if name && name == 'warning'
+				+#{data}
+			.box--bottom
+				.footer__copy
+					span.footer__copy-logo
+						img(src="images/footer__copy-logo.png")
+					span
+						| Copyright © 2015 Merck Sharp & Dohme Ltd. All rights reserved.   |  INFC-1100062-0026   |   Date of preparation: 12.2015

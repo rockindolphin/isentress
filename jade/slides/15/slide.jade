@@ -1,0 +1,48 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-15.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| ИСЕНТРЕСС:
+				span.text
+					|  профиль безопасности длительной терапии у&nbsp;ранее нелеченных пациентов<sup>5</sup>
+		main.slide__main
+			.box--top
+				.pane.pane--gray.pane--wide.pane--fact
+					h3.text.text--pink
+						| <b>STARTMRK</b> 240 недель: частота лекарственных НЯ* в группе ИСЕНТРЕССа была значительно ниже, чем в группе эфавиренза				
+			.box--bottom.box--flex-row
+				.box--left
+					.pane
+						ul.list.list--rhombus
+							li.list__item
+								| Лекарственные НЯ были отмечены в группе <b>ИСЕНТРЕССа</b> у 52% больных (146/281) и в группе эфавиренза у 80% больных (226/282) (р<0,001)*5
+					p.footnote
+						| *желудочно-кишечные расстройства, общие реакции, неврологические и психические расстройства, изменения со стороны кожи и мягких тканей
+				.box--right
+					.diagram.diagram--box
+						header.diagram__header
+							.diagram__title
+								| Процент пациентов с наиболее частыми (≥5%) лекарственными <br>НЯ в двух группах<sup>5</sup>
+						main.diagram__main
+							img.scheme__img(src="images/slides/15/1.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								| Адаптировано из Rockstroh JK et al. 2013
+							.diagram__btn(data-popup="popup-15")
+								|Дизайн исследования
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle(data-popup-menu="popup-15-2")
+									img.scheme__img(src="images/menu.png")
+								.popup__wrapper.popup__wrapper--shadow-hidden
+									//-  POPUP 15-2 -//
+									+popup--menu('15-2','popup--left')
+						+footer-nav-items()
+		+slide__footer('nav','data')

@@ -1,0 +1,55 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-12.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| Начни и продолжай: 
+				span.text
+					| ИСЕНТРЕСС – отсутствие увеличения случаев резистентности при долгосрочном наблюдении
+		main.slide__main
+			.diagram.diagram--box
+				header.diagram__header
+					h4.text--pink.diagram__title
+						| В клинических исследованиях у пациентов, не получавших ранее лечения, отмечена низкая частота резистентности к ИСЕНТРЕССу
+					.diagram__title
+						| Число пациентов, у которых сформировалась резистентность к третьему препарату
+				main.diagram__main
+					.box
+						.box--left
+							img.scheme__img(src="images/slides/12/1.jpg")
+							.diagram__caption
+								| Адаптировано из STARTMRK Studies
+						.box--right
+							.diagram__btn(data-popup="popup-12")
+								|Дизайн исследования						
+					.box
+						.box--left
+							img.scheme__img(src="images/slides/12/2.jpg")
+						.box--right
+							.diagram__btn(data-popup="popup-12")
+								|Дизайн исследования						
+							.diagram__caption
+								| Адаптировано из Raffi et al., 2013
+				footer.diagram__footer
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/up.png")
+						li.list__item
+							a.nav__item
+								.btn.btn--circle(data-popup-menu="popup-12-3")
+									img.scheme__img(src="images/menu.png")
+								.popup__wrapper.popup__wrapper--shadow-hidden
+									//-  POPUP 12-3 -//
+									+popup--menu('12-3')
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/down.png")
+		+slide__footer('nav','data')

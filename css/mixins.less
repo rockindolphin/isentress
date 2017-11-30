@@ -1,0 +1,25 @@
+/* TYPOGRAPHY */
+
+.add_font( @f_name, @f_type, @f_style, @f_weight ){
+	@font-face {
+		font-family: '@{f_name}';
+		src:url('../fonts/@{f_name}/@{f_name}@{f_type}.woff'),
+			url('../fonts/@{f_name}/@{f_name}@{f_type}.woff2');
+		font-weight: @f_weight;
+		font-style: '@{f_style}';
+	}	
+}
+
+
+/* SVG */
+
+@images_path: '../images/';
+@encode_svg: true;
+
+.insert_svg(@filename)	when ( @encode_svg = true ){
+	background: data-uri('image/svg+xml;charset=UTF-8', '@{images_path}@{filename}.svg' ) center center no-repeat;
+}
+
+.insert_svg(@filename)	when ( @encode_svg = false ){
+	background: url('@{icons_path}@{filename}.svg') center center no-repeat;
+}

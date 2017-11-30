@@ -1,0 +1,18 @@
+.popup--slide{
+	&.popup--hidden{
+		top: ~'calc(-100vh - 120px)';
+	}
+}
+
+.popup--menu{
+	&.popup--hidden{
+		bottom: -100vh;
+	}
+}
+
+.popup--scaled{
+	&.popup--hidden{
+		transform: translateX(-50%) scale(0.4);
+		opacity: 0;
+	}
+}

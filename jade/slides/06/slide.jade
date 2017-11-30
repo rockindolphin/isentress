@@ -1,0 +1,40 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-6.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| Начни и продолжай
+				span.text
+					| длительную АРВТ, в которой <br>нуждается Михаил
+		main.slide__main
+			.box--left
+				.pane
+					span.person__name
+						|Михаил&nbsp;
+					span.person__age
+						|(33)
+				.pane.pane--gray
+					div.text--caption
+						|Михаил, 33-летний пациент, имевший секс с мужчинами. Работает дизайнером. Недавно были диагностированы ВИЧ-инфекция и хронический гепатит С, поэтому нуждается в лечении обоих инфекционных заболеваний. Курит
+				.pane.pane--gray
+					ul.list.list--rhombus
+						li.list__item
+							|Вирусная нагрузка 222 000 копий/мл
+						li.list__item
+							|CD4 323 клеток в мм<sup>3</sup> 
+						li.list__item
+							|HLA-B5701 не выявлен
+						li.list__item
+							|Антитела к вирусу гепатита С
+						li.list__item
+							|АЛТ 234 МЕ/мл
+						li.list__item
+							|HCV РНК 2 468 198 копий/мл (ПЦР)
+				.pane.pane--pink
+					span.text.text--bold
+						|Следует ли включить ИСЕНТРЕСС <br>в схему антиретровирусной терапии?
+			.box--right
+				img.img(src="images/slides/06/1.png")
+		+slide__footer()

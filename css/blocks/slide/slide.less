@@ -1,0 +1,20 @@
+.slide{
+	width: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	padding-left: 1px*@page-left + @page-main-left;
+	padding-right: 1px*@page-right + @page-main-right;
+
+	/*&>*{
+		border: 1px solid;
+	}*/
+		
+}
+
+@import '__header/slide__header.less';
+@import '__main/slide__main.less';
+@import '__footer/slide__footer.less';

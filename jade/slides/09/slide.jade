@@ -1,0 +1,41 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-9.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| Эффективность 
+				span.text
+					| – STARTMRK 240 недель<sup>5</sup>
+		main.slide__main
+			.box--top
+				.pane.pane--gray.pane--wide.pane--fact
+					h3.text.text--pink
+						|<b>ИСЕНТРЕСС</b> через 192 и 240 недель по эффективности достоверно превосходил эфавиренз у пациентов, не получавших ранее лечения<sup>5</sup>						
+			.box--bottom.box--flex-row
+				.box--left
+					.pane
+						ul.list.list--rhombus
+							li.list__item
+								|Через 48 недель была достигнута первичная конечная точка и установлена сопоставимая эффективность ИСЕНТРЕССа + тенофовира/эмтрицитабина: частота ответа 86,1% [241/280] vs 81,9% [230/281] (РНК ВИЧ<50 копий/мл; р<0,0001)<sup>5</sup>
+					.pane.pane--stick-left
+						ul.list.list--tabs
+							li.list__item
+								|Spring 2
+							li.list__item
+								|Резистентность
+							li.list__item
+								|Мета-анализ
+							li.list__item
+								|Режим дозирования
+				.box--right
+					.diagram.diagram--box
+						main.diagram__main
+							img.scheme__img(src="images/slides/09/1.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								|Дизайн исследования STARTMRK – Rockstroh et al.<sup>5</sup>
+							.diagram__btn(data-popup="popup-9")
+								|Дизайн исследования
+		+slide__footer()

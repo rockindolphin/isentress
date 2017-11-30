@@ -1,0 +1,23 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-23.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| SPIRAL: 
+				span.text
+					| Переключение на Исентресс (RAL) с ИП/р не влияет на вирусологический ответ<sup>9</sup>
+		main.slide__main
+			.box--left
+				.diagram.diagram--box
+					main.diagram__main
+						img.scheme__img(src="images/slides/23/1.png")
+			.box--right
+				.diagram.diagram--box
+					main.diagram__main
+						img.scheme__img(src="images/slides/23/2.jpg")
+				footer.diagram__footer
+					.diagram__caption
+						| Martinez E, et al. AIDS. 2010;24:1697-1707
+		+slide__footer()

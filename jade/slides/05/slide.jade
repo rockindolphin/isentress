@@ -1,0 +1,33 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-5.slide
+		header.slide__header
+			.header__title.text--center
+				span.text--pink
+					| Встречайте...
+		main.slide__main
+			.img__wrapper
+				img.img(src="images/slides/05/1.png")
+				.img__label
+					span.person__name
+						|Анна 
+					span.person__age
+						|(47)
+					div.text
+						|Сопутствующие заболевания
+				.img__label
+					span.person__name
+						|Михаил 
+					span.person__age
+						|(33)
+					div.text
+						|HCV ко-инфекция
+				.img__label
+					span.person__name
+						|Роман
+					span.person__age
+						|(53)
+					div.text
+						|Прием других препаратов																						
+		+slide__footer()

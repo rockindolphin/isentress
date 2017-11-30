@@ -1,0 +1,16 @@
+.list--tabs{
+	list-style: none;
+	padding-left: 20px;
+	.list__item{
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 10px;
+		border-top-right-radius: 1px*@box-rad*2;
+		border-bottom-right-radius: 1px*@box-rad*2;
+		background: linear-gradient(to right, fade( @gray_7c7, 30% ) 0%,fade( @gray_7c7, 20% ) 100%);
+		&:not(:first-child){
+			margin-top: 7px;
+		}
+	}
+}
+

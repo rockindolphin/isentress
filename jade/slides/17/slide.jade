@@ -1,0 +1,46 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-17.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| Повышение печеночных ферментов
+				span.text
+					|  
+		main.slide__main
+			.box--top
+				.pane.pane--gray.pane--wide.pane--fact
+					h4.text.text--pink
+						| При лечении <b>ИСЕНТРЕССом</b> частота повышения печеночных ферментов у пациентов с ВИЧ-инфекцией и ВИЧ/HCV-коинфекцией была ниже, чем при лечении другими препаратами
+			.box--bottom.box--flex-row
+				.box--left
+					.pane
+						ul.list.list--rhombus
+							li.list__item
+								| В наблюдательном исследовании повышение активности печеночных ферментов в течение первых 12 месяцев после начала лечения ингибиторами протеазы и ненуклеозидными ингибиторами обратной транскриптазы отмечалось чаще, чем при приеме <b>ИСЕНТРЕССа</b><sup>14</sup>
+				.box--right
+					.diagram.diagram--box
+						header.diagram__header
+							.diagram__title
+								| Частота (%) повышения активности печеночных ферментов в течение первых 12 месяцев терапии
+						main.diagram__main
+							img.scheme__img(src="images/slides/17/1.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								| Адаптировано из Vispo et al. 2010
+							.diagram__btn(data-popup="popup-17")
+								| Дизайн исследования
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle(data-popup-menu="popup-17-2")
+									img.scheme__img(src="images/menu.png")
+								.popup__wrapper.popup__wrapper--shadow-hidden
+									//-  POPUP 17-2 -//
+									+popup--menu('17-2','popup--left')
+						+footer-nav-items()
+		+slide__footer('nav','data')

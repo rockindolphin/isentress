@@ -1,0 +1,10 @@
+@shift-left: @page-left + @page-main-left + @slide-main-left;
+
+.pane--stick-left{
+	display: inline-flex;
+	margin-left: -1px*(@shift-left + 20px);
+	.list__item{
+		padding-left: 1px*(@shift-left + 20px);				
+	}
+}
+

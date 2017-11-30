@@ -1,0 +1,53 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-18.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| Почечные аспекты
+				span.text
+					|  
+		main.slide__main
+			.box--left
+				.pane
+					h4.text--pink
+						b
+							| ИСЕНТРЕСС<sup>1</sup>
+					ul.list.list--rhombus
+						li.list__item
+							| Коррекция дозы <b class="text--pink">ИСЕНТРЕССа</b> у пациентов с нарушением функции почек не требуется<sup>14</sup>
+						li.list__item
+							| Дополнительное мониторирование функции почек не требуется
+					h4
+						| Долутегравир<sup>10</sup>
+					ul.list.list--rhombus
+						li.list__item
+							| SPRING-2: Сывороточный креатинин в группе долутегравира повысился со 2-ой недели АРВТ и оставался повышенным на протяжении всей (96 нед.) терапии<sup>7*</sup>
+					.footnote
+						| * по мнению исследователей, эффект клинически незначительный 
+			.box--right
+				.diagram.diagram--box
+					header.diagram__header
+						.diagram__title
+							| SPRING-2: сывороточный креатинин в группе долутегравир повысился со 2-ой неделе АРВТ и оставался повышеным на протяжении всей (96 нед) терапии<sup>7</sup
+					main.diagram__main
+						img.scheme__img(src="images/slides/18/1.jpg")
+					footer.diagram__footer
+						.diagram__caption
+							| Адаптировано из Raffi et al. 2013
+						.diagram__btn(data-popup="popup-18")
+							| Дизайн исследования <br>и первичная конечная точка
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle(data-popup-menu="popup-18-2")
+									img.scheme__img(src="images/menu.png")
+								.popup__wrapper.popup__wrapper--shadow-hidden
+									//-  POPUP 18-2 -//
+									+popup--menu('18-2','popup--left')
+						+footer-nav-items()
+		+slide__footer('nav','data')

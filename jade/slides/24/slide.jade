@@ -1,0 +1,29 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-24.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| SPIRAL: 
+				span.text
+					| Переключение на Исентресс (RAL) с ингибиторов протеазы не влияет на вирусологический ответ<sup>9</sup>
+		main.slide__main
+			.box--left
+				.diagram.diagram--box
+					header.diagram__header
+						.diagram__title
+							| Доля пациентов без неудачи <br>в терапии 
+					main.diagram__main
+						img.scheme__img(src="images/slides/24/1.png")
+			.box--right
+				.diagram.diagram--box
+					header.diagram__header
+						.diagram__title
+							| Доля пациентов без вирусологической неудачи<br>(РНК ВИЧ>50 копий/мл)
+					main.diagram__main
+						img.scheme__img(src="images/slides/24/2.png")
+			footer.diagram__footer
+				.diagram__caption
+					| Martinez E, et al. AIDS. 2010;24:1697-1707
+		+slide__footer()

@@ -1,0 +1,55 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-16.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| ИСЕНТРЕСС:
+				span.text
+					|  профиль безопасности у пациентов, не&nbsp;получавших ранее лечения<sup>6</sup>
+		main.slide__main
+			.box--top
+				.pane.pane--gray.pane--wide.pane--fact
+					h3.text.text--pink
+						b
+							| ACTG 5257: частота прекращения лечения из-за токсичности в группе ИСЕНТРЕССа была ниже, чем в группах атазанавира/р и дарунавира/р<sup>6</sup>
+			.box--bottom.box--flex-row
+				.box--left
+					.pane
+						p
+							| Частота прекращения лечения из-за токсичности<sup>6</sup>
+						ul.list.list--rhombus
+							li.list__item
+								b
+									| ИСЕНТРЕСС – 1,3% (8/606)
+							li.list__item
+								| Дарунавир/р – 5,3% (32/601)
+							li.list__item
+								| Атазанавир/р – 15,7% (95/605)
+				.box--right
+					.diagram.diagram--box
+						header.diagram__header
+							img.scheme__img.diagram__label(src="images/slides/10/2.jpg")
+							.diagram__title
+								| Пациенты, прекративших лечение из-за токсичности после 96 недель<sup>6</sup>
+						main.diagram__main
+							img.scheme__img(src="images/slides/16/1.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								| Исключая показатели функции печени<br>Адаптировано из Lennox et al. 2014
+							.diagram__btn(data-popup="popup-16")
+								|Дизайн исследования
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle(data-popup-menu="popup-16-2")
+									img.scheme__img(src="images/menu.png")
+								.popup__wrapper.popup__wrapper--shadow-hidden
+									//-  POPUP 16-2 -//
+									+popup--menu('16-2','popup--left')
+						+footer-nav-items()
+		+slide__footer('nav','data')

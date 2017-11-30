@@ -1,0 +1,52 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-21.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| Метформин
+				span.text
+					|  
+		main.slide__main
+			.box--top
+				.pane.pane--gray.pane--wide.pane--fact
+					h3.text.text--pink
+						| Эффект долутегравира на фармакокинетику метформина у здоровых людей<sup>18</sup>
+			.box--bottom.box--flex-row
+				.box--left
+					.pane
+						ul.list.list--rhombus
+							li.list__item
+								| In vitro*, долутегравир ингибирует транспортер 2 органических катионов (OCT2) и транспортер 1 лекарственных веществ и токсинов (MATE 1), которые принимают участие в распределении метформина<sup>18</sup>
+							li.list__item
+								| Сочетанное применение долутегравира и метформина увеличивает экспозицию последнего в плазме; этот эффект зависел от дозы долутегравира<sup>18</sup>
+							li.list__item
+								| При одновременном назначении метформина и долутегравира рекомендуется тщательное наблюдение за пациентами10,18
+							li.list__item
+								| Может потребоваться коррекция дозы<sup>10,18</sup>
+						.footnote
+							| *клиническое значение данных in vitro не установлено
+				.box--right
+					.diagram.diagram--box
+						header.diagram__header
+							.diagram__title
+								| Зависимость концентраций метформина от времени<sup>18</sup>
+						main.diagram__main
+							img.scheme__img(src="images/slides/21/1.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								| Адаптировано из Zong J, et al. 2014
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle(data-popup-menu="popup-21")
+									img.scheme__img(src="images/menu.png")
+								.popup__wrapper.popup__wrapper--shadow-hidden
+									//-  POPUP 21 -//
+									+popup--menu('21','popup--left')
+						+footer-nav-items()
+		+slide__footer('nav','data')

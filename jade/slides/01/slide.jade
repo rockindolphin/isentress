@@ -1,0 +1,12 @@
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-1.slide
+		header.slide__header
+		main.slide__main
+			img.img(src="images/slides/01/1.png")
+		mixin data
+			.box--bottom
+				.footer__warning
+					|Компания МСД просит Вас сообщать обо всех нежелательных явлениях и претензиях к качеству продукции МСД по электронному адресу DPOC.Russia@merck.com или по телефону +7 (495) 916-71-00. Пожалуйста, примите к сведению, что для получения дополнительной информации сотрудники Компании, возможно, свяжутся с Вами.				
+		+slide__footer('warning','data')

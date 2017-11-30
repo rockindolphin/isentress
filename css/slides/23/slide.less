@@ -1,0 +1,43 @@
+
+#slide-23{
+	.slide__header{
+		.header__title{
+			font-size: 46px;		
+		}
+	}
+	.slide__main{
+		align-items: center;
+		justify-content: space-between;
+		.box--left,
+		.box--right{
+			display: flex;
+			align-items: stretch;
+			justify-content: center;
+		}
+		.box--left{
+			margin-right: 20px;
+			.diagram{
+				background: transparent;
+				border: none;
+			}		
+		}
+		.box--right{
+			flex-direction: column;
+			.diagram__title{
+				max-width: 300px;
+			}	
+		}
+		.diagram__header{
+			width: 100%;
+			text-align: center;
+		}
+		.diagram__title{
+			font-weight: normal;
+		}	
+		.diagram__footer{
+			padding: 0 0.5em;
+			margin-top: 20px;
+			justify-content: flex-end;
+		}
+	}
+}
