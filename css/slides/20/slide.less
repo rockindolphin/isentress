@@ -2,58 +2,17 @@
 #slide-20{
 	.slide__header{
 		.header__title{
-			font-size: 46px;		
 		}
 	}
 	.slide__main{
-		align-items: flex-start;
-		padding-top: 10px;
-		.box--left{
-			margin-right: 20px;
-			max-width: 330px;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			justify-content: space-between;			
-		}
-		.box--right{
-			.diagram__main{
-				width: 100%;
-				text-align: center;
-			}
-			.diagram__header{
-				width: 100%;
-				text-align: center;
-			}
-			.diagram__footer{
-				padding-left: 8px;
-				padding-right: 8px;
-				margin-top: 5px;
-			}
-			&>.diagram{
-				border: none;
-				padding: 0;
-				border-radius: 0;
-				background: transparent;
-				&>.diagram__main{
-					display: flex;
-					flex-direction: row;
-					align-items: flex-start;
-					justify-content: flex-start;
-					flex-wrap: wrap;					
-					&>.diagram{
-						width: ~'calc(50% - 8*2px)';
-						margin: 2px 8px;
-					}
-				}
-			}
-			.diagram__label{
-				position: absolute;
-				z-index: 1;
-				top: 50%;
-				left: 50%;
-				transform: translateX(-50%) translateY(-50%);
-			}
-		}	
+		flex-direction: column;
+		justify-content: space-around;		
+	}
+	.diagram--box{
+		margin-bottom: 10px;
+	}
+	.diagram__main{
+		width: 100%;
+		text-align: center;		
 	}
 }

@@ -2,30 +2,33 @@
 #slide-11{
 	.slide__header{
 		.header__title{
-			font-size: 36px;
+			font-size: 48px;
 		}
 	}
 	.slide__main{
-		.box{
-			display: flex;
-			flex-direction: row;
-			align-items: stretch;
-			justify-content: space-between;
-			margin-top: 30px;
-			width: 100%;
-		}
-		.box--left{
-			max-width: 250px;
-			margin-right: 30px;
-		}
-		.diagram__header{
-			.diagram__title{
-				font-weight: normal;
-				text-align: center;
-			}
-		}
-		.diagram__caption{
-			margin-right: 10px;
-		}		
+		flex-direction: column;
+		justify-content: space-around;		
+	}
+	.diagram--box{
+		margin-bottom: 10px;
+	}
+	.diagram__main{
+		width: 100%;
+		text-align: center;		
+	}
+	.diagram__footer{
+		position: relative;
+		justify-content: flex-end;
+	}
+	.diagram__caption{
+		position: absolute;
+		z-index: 1;
+		bottom: 11px;
+		width: 100%;
+		text-align: center;		
+	}
+	.diagram__btn{
+		position: relative;
+		z-index: 2;
 	}
 }

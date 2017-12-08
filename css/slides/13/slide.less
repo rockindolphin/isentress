@@ -2,33 +2,51 @@
 #slide-13{
 	.slide__header{
 		.header__title{
-			font-size: 43px;
+	
 		}
 	}
 	.slide__main{
 		flex-direction: column;
-		justify-content: space-around;
-		.pane--fact{
-			margin-top: 32px;
+		.box--top{
+			margin-top: 10px;
 		}
-		.box--flex-row{
-			justify-content: space-between;
+		.box--bottom{
+			display: flex;
+			flex-direction: row;
 			align-items: flex-start;
-		    margin-bottom: 15px;
+			margin-top: 10px;
+			margin-bottom: 10px;
 		}
+		.box--left,
 		.box--right{
-			margin-right: 55px;
+			width: ~'calc(50% - 10px)';
 		}
 		.box--left{
-			max-width: 340px;
-			margin-right: 10px;
-			&>.pane{
-				&:first-child{
-					position: relative;
-					font-size: 17px;
-					line-height: 1.4;
-				}
-			}
+			margin-right: 20px;		
 		}
+		.diagram{
+			background: transparent;
+			min-height: 370px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;			
+		}
+		.diagram__header{
+			width: 100%;
+			text-align: center;
+		}
+		.diagram__main{
+			width: 100%;
+			text-align: center;
+			margin-top: 10px;
+		}
+		.diagram__title{
+			font-weight: normal;
+		}	
+		.diagram__footer{
+			width: 100%;
+			justify-content: flex-end;
+		}	
 	}
 }

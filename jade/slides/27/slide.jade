@@ -1,0 +1,38 @@
+
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-27.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| ИСЕНТРЕСС – низкая частота 
+				span.text
+					| развития резистентности
+		main.slide__main
+			.diagram.diagram--box
+				header.diagram__header
+					h4.text--pink.diagram__title
+						| В клинических исследованиях у пациентов, не получавших ранее лечения, отмечена низкая частота резистентности к ИСЕНТРЕССу
+					.diagram__title
+						| Число пациентов, у которых сформировалась резистентность к третьему препарату
+				main.diagram__main
+					.box
+						.box--left
+							img.scheme__img(src="images/slides/27/1.jpg")
+							.diagram__caption
+								| Адаптировано из STARTMRK Studies
+						.box--right
+							.diagram__btn(data-popup="popup-27")
+								| Дизайн исследования						
+					.box
+						.box--left
+							img.scheme__img(src="images/slides/27/2.jpg")
+						.box--right
+							.diagram__btn(data-popup="popup-27-2")
+								| Дизайн исследования						
+							.diagram__caption
+								| Адаптировано из Raffi et al., 2013
+				footer.diagram__footer
+		+slide__footer()
+	

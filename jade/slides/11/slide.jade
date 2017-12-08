@@ -5,48 +5,21 @@ include ../../mixins.jade
 		header.slide__header
 			.header__title
 				span.text--pink
-					| SPRING-2: 
+					| Долгосрочная эффективность 
 				span.text
-					| долутегравир продемонстрировал схожую с Исентрессом эффективность у наивных пациентов<sup>7</sup>
+					| – STARTMRK 240 недель<sup>5</sup>
 		main.slide__main
-			.box
-				.box--left
-					.pane
-						h6
-							b
-								| Первичная конечная точка через 48 недель<sup>7</sup>
-						ul.list.list--rhombus
-							li.list__item
-								| Частота снижения РНК ВИЧ-1 <50 копий/мл составила в группе <b>ИСЕНТРЕССа</b> – 85% (351/411) и в группе долутегравира – 88% (361/411)
-				.box--right
-					.diagram.diagram--box
-						header.diagram__header
-							.diagram__title
-								| Доля пациентов с РНК ВИЧ-1 <50 копий/мл (первичная конечная точка)<sup>7</sup>
-						main.diagram__main
-							img.scheme__img(src="images/slides/11/1.jpg")
-						footer.diagram__footer
-							.diagram__caption
-								| Адаптировано из Raffi et al., 2013 <br> Исследуемые препараты применяли в сочетании с тенофовиром/эмтрицитабином или абакавиром/ламивудином
-							.diagram__btn(data-popup="popup-11")
-								|Дизайн исследования
-		mixin data
-			.footer__nav
-				nav.nav
-					ul.list
-						li.list__item
-							a.nav__item
-								.btn.btn--circle
-									img.scheme__img(src="images/up.png")
-						li.list__item
-							a.nav__item
-								.btn.btn--circle(data-popup-menu="popup-11-2")
-									img.scheme__img(src="images/menu.png")
-								.popup__wrapper.popup__wrapper--shadow-hidden
-									//-  POPUP 11-2 -//
-									+popup--menu('11-2')
-						li.list__item
-							a.nav__item
-								.btn.btn--circle
-									img.scheme__img(src="images/down.png")
-		+slide__footer('nav','data')
+			.box--top
+				.pane.pane--gray.pane--wide
+					h3.text.text--pink
+						| <b>ИСЕНТРЕСС</b> через 192 и 240 недель по эффективности достоверно превосходил эфавиренз у пациентов, не получавших ранее лечения<sup>5</sup>
+			.box--bottom
+				.diagram.diagram--box
+					main.diagram__main
+						img.scheme__img(src="images/slides/11/1.jpg")
+					footer.diagram__footer
+						.diagram__caption
+							| Дизайн исследования STARTMRK – Rockstroh et al.<sup>5</sup>
+						.diagram__btn(data-popup="popup-11")
+							| Дизайн исследования
+		+slide__footer()

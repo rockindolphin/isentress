@@ -1,0 +1,34 @@
+
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-28.slide
+		header.slide__header
+			.header__title
+				span.text--pink
+					| ИСЕНТРЕСС 
+				span.text
+					| – высокая приверженность пациентов
+		main.slide__main
+			.box--top
+				.pane.pane--gray.pane--wide
+					h4.text.text--pink
+						| По данным мета-анализа 19 исследований, у ВИЧ-инфицированных пациентов прием препаратов один раз в день не имеет достоверного преимущества в приверженности терапии над приемом 2 раза в день			
+			.box--bottom.box--flex-row
+				.box--left
+					.pane
+						ul.list.list--rhombus
+							li.list__item
+								b
+									| У пациентов, принимавших антиретровирусные препараты один раз в день, вирусологическая эффективность не превышала таковую у пациентов, которым их назначали два раза в день (относительный риск [ОР] = 1,01; 95% ДИ 0,99-1,03; р=0,50).
+				.box--right
+					.diagram.diagram--box
+						main.diagram__main
+							img.scheme__img(src="images/slides/28/1.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								| *Взвешенная средняя разница = 2,55%; <br> 95% доверительный интервал 1,23–3,87; р=0,002 <br> Адаптировано из Nachega et al., 2014
+							.diagram__btn(data-popup="popup-28")
+								| Дизайн исследования
+		+slide__footer()
+	

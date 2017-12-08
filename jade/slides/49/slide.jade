@@ -1,0 +1,44 @@
+
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-49.slide
+		header.slide__header.header--with-icon
+			.header__title
+				span.text--pink
+					| TROP:    
+				span.text
+					| увеличение минеральной плотности костной ткани при переключении с тенофовира на ралтегравир<sup>21</sup>
+			img.header__icon(src="images/man-icon.png")
+		main.slide__main
+			.box
+				.box--left
+					ul.list.list--rhombus
+						li.list__item
+							| На фоне приема RAL статистически значимое увеличение минеральной плотности костной ткани зафиксировано уже на 24 неделе и продолжало статистически значимо увеличиваться к 48 неделе.
+				.box--right
+					.diagram.diagram--box
+						header.diagram__header
+							.diagram__title
+								| Доля увеличения минеральной плотности костной ткани <br>(МПКТ г/см2) от исходного (%)
+						main.diagram__main
+							img.scheme__img(src="images/slides/49/1.jpg")
+						footer.diagram__footer
+							.diagram__btn(data-popup="popup-49")
+								| Дизайн исследования
+					.diagram__caption
+						| Curran AE, et al. CROI 2011. Abstract 845
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/left.png")
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/right.png")
+		+slide__footer('nav','data')
+	

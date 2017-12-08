@@ -2,28 +2,31 @@ include ../../mixins.jade
 
 .swiper-slide.swiper__slide
 	#slide-24.slide
-		header.slide__header
+		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| SPIRAL: 
-				span.text
-					| Переключение на Исентресс (RAL) с ингибиторов протеазы не влияет на вирусологический ответ<sup>9</sup>
+					| Исентресс:   
+				div.text
+					| таблетки жевательные 25 мг и 100 мг<sup>24</sup>					
+			img.header__icon(src="images/bear-icon.png")
 		main.slide__main
-			.box--left
-				.diagram.diagram--box
-					header.diagram__header
-						.diagram__title
-							| Доля пациентов без неудачи <br>в терапии 
-					main.diagram__main
-						img.scheme__img(src="images/slides/24/1.png")
-			.box--right
-				.diagram.diagram--box
-					header.diagram__header
-						.diagram__title
-							| Доля пациентов без вирусологической неудачи<br>(РНК ВИЧ>50 копий/мл)
-					main.diagram__main
-						img.scheme__img(src="images/slides/24/2.png")
-			footer.diagram__footer
-				.diagram__caption
-					| Martinez E, et al. AIDS. 2010;24:1697-1707
-		+slide__footer()
+			.diagram.diagram--box
+				header.diagram__header.text--center
+					h6.diagram__title
+						| Исходные характеристики пациентов, принимавших жевательные таблетки в исследовании IMPAACT P1066				
+				main.diagram__main
+					img.scheme__img(src="images/slides/24/1.jpg")
+				footer.diagram__footer
+					.diagram__caption
+						| Sharon Nachman, Nan Zheng, Edward P. Acosta, et al. Pharmacokinetics, Safety, and 48-Week Efficacy of Oral Raltegravir in HIV-1–Infected Children Aged  2 Through 18 Years. Clin Infect Dis. HIV/AIDS • CID 2014:58 (1 February). 413-422. Published online 2013 Oct 21. doi:  10.1093/cid/cit696. PMCID: PMC3890333.
+					.diagram__btn(data-popup="popup-24")
+						| Дизайн исследования														
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/right.png")
+		+slide__footer('nav','data')

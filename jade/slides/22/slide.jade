@@ -2,34 +2,15 @@ include ../../mixins.jade
 
 .swiper-slide.swiper__slide
 	#slide-22.slide
-		header.slide__header
+		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| SPIRAL: 
+					| Проникновение АРВ препаратов  
 				span.text
-					| Переключение на Исентресс (RAL) с ИП/р не влияет на вирусологический ответ<sup>9</sup>
+					| в ЦНС<sup>30</sup> 					
+			img.header__icon(src="images/brain-icon.png")
 		main.slide__main
-			.box
-				.box--left
-					.pane
-						ul.list.list--rhombus
-							li.list__item
-								| Мультицентровое, открытое исследование
-							li.list__item
-								| Длительность: 48 недель
-							li.list__item
-								| Критерии пациентов: РНК-ВИЧ <50 копий/мл, ИП/р не менее 6 месяцев
-							li.list__item
-								| Рандомизация 1:1
-							li.list__item
-								| Первичная конечная точка: доля пациентов без неудачи в терапии* на 48 неделе. Вторичная: доля пациентов без вирусологической неудачи (>50 копий) на 48 нед.
-						.footnote
-							| *пациенты не закончившие терапию 48 недель = неудача
-				.box--right
-					.diagram.diagram--box
-						main.diagram__main
-							img.scheme__img(src="images/slides/22/1.jpg")
-					footer.diagram__footer
-						.diagram__caption
-							| Martinez E, et al. AIDS. 2010;24:1697–1707
+			.diagram.diagram--box
+				main.diagram__main
+					img.scheme__img(src="images/slides/22/1.jpg")
 		+slide__footer()

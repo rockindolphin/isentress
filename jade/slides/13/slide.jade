@@ -5,47 +5,36 @@ include ../../mixins.jade
 		header.slide__header
 			.header__title
 				span.text--pink
-					| Начни и продолжай АРВТ с высокой приверженностью пациентов
+					| SPIRAL: 
 				span.text
-					| 
+					| Переключение на Исентресс (Ral) с ингибиторов протеазы не влияет на вирусологический ответ<sup>9</sup>
 		main.slide__main
 			.box--top
 				.pane.pane--gray.pane--wide
-					h4.text.text--pink
-						| По данным мета-анализа 19 исследований, у ВИЧ-инфицированных пациентов <br>прием препаратов один раз в день не имеет достоверного преимущества  в приверженности <br>к терапии над приемом 2 раза в день				
-			.box--bottom.box--flex-row
+					h4.text
+						span.text--pink
+							| Переключение на ИСЕНТРЕСС с ингибиторов протеазы,
+						span
+							| усиленных ритонавиром, было сопоставимо по эффективности с продолжением терапии ИП/р
+			.box--bottom
 				.box--left
-					.pane
-						ul.list.list--rhombus
-							li.list__item
-								b
-									| У пациентов, принимавших антиретровирусные препараты один раз в день, вирусологическая эффективность не превышала таковую у пациентов, которым их назначали два раза в день (относительный риск [ОР] = 1,01; 95% ДИ 0,99-1,03; р=0,50).
+					.diagram.diagram--box
+						header.diagram__header
+							.diagram__title
+								| Доля пациентов без неудачи <br>в терапии 
+						main.diagram__main
+							img.scheme__img(src="images/slides/13/1.png")
 				.box--right
 					.diagram.diagram--box
+						header.diagram__header
+							.diagram__title
+								| Доля пациентов без вирусологической неудачи<br>(РНК ВИЧ>50 копий/мл)
 						main.diagram__main
-							img.scheme__img(src="images/slides/13/1.jpg")
+							img.scheme__img(src="images/slides/13/2.png")
 						footer.diagram__footer
-							.diagram__caption
-								| *Взвешенная средняя разница = 2,55%;<br>95% доверительный интервал 1,23–3,87; р=0,002 <br> Адаптировано из Nachega et al., 2014
 							.diagram__btn(data-popup="popup-13")
-								|Дизайн исследования
-		mixin data
-			.footer__nav
-				nav.nav
-					ul.list
-						li.list__item
-							a.nav__item
-								.btn.btn--circle
-									img.scheme__img(src="images/up.png")
-						li.list__item
-							a.nav__item
-								.btn.btn--circle(data-popup-menu="popup-13-2")
-									img.scheme__img(src="images/menu.png")
-								.popup__wrapper.popup__wrapper--shadow-hidden
-									//-  POPUP 13-2 -//
-									+popup--menu('13-2')
-						li.list__item
-							a.nav__item
-								.btn.btn--circle
-									img.scheme__img(src="images/down.png")
-		+slide__footer('nav','data')
+								| Дизайн исследования
+			footer.diagram__footer
+				.diagram__caption
+					| Martinez E, et al. AIDS. 2010;24:1697-1707
+		+slide__footer()

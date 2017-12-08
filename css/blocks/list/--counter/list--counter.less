@@ -1,0 +1,15 @@
+.list--counter{
+	padding-left: 0;
+	counter-reset: list-counter;
+	list-style: none;
+	.list__item{
+		&:before{
+			content: counter(list-counter)+'. ';
+			display: inline-block;
+			counter-increment: list-counter;
+			color: @pink_cb2;
+			min-width: 1.6em;
+		}
+	}
+}
+

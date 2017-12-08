@@ -1,0 +1,49 @@
+
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-33.slide
+		header.slide__header.header--with-icon
+			.header__title
+				span.text--pink
+					| ИСЕНТРЕСС: 
+				span.text
+					| профиль безопасности длительной терапии у ранее нелеченных пациентов<sup>5</sup>
+			img.header__icon(src="images/brain-icon.png")
+		main.slide__main
+			.box--top
+				.pane.pane--gray.pane--wide
+					h4.text.text--pink
+						| STARTMRK 240 недель: частота лекарственных НЯ* в группе Исентресса была значительно ниже, чем в группе эфавиренза		
+			.box--bottom.box--flex-row
+				.box--left
+					.pane
+						ul.list.list--rhombus
+							li.list__item
+								| Лекарственные НЯ были отмечены в группе <b>Исентресса</b> у 52% больных (146/281) и в группе эфавиренза у 80% больных (226/282) (р<0,001)*5
+							li.list__item
+								| В группе <b>Исентресса</b> значительно реже регистрировались НЯ со стороны ЦНС (39,1%) по сравнению с группой EFV (64,2%) на 240 неделе (p <0,001)
+					.footnote
+						| *желудочно-кишечные расстройства, общие реакции, неврологические и психические расстройства, изменения со стороны кожи и мягких тканей
+				.box--right
+					.diagram.diagram--box
+						header.diagram__header
+							.diagram__title
+								| Процент пациентов с наиболее частыми (≥5%) лекарственными НЯ в двух группах<sup>5</sup>
+						main.diagram__main
+							img.scheme__img(src="images/slides/33/1.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								| Адаптировано из Rockstroh JK et al. 2013
+							.diagram__btn(data-popup="popup-33")
+								| Дизайн исследования
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/right.png")
+		+slide__footer('nav','data')
+	

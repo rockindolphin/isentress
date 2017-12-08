@@ -2,33 +2,26 @@ include ../../mixins.jade
 
 .swiper-slide.swiper__slide
 	#slide-14.slide
-		header.slide__header
+		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| Начни и продолжай АРВТ: 
+					| Эффективность 
 				span.text
-					| особенности режимов
+					| – BENCHMRK 240 недель<sup>28</sup>
+			img.header__icon(src="images/bear-icon.png")
 		main.slide__main
-			.diagram.diagram--box
-				header.diagram__header
-				main.diagram__main
-					img.scheme__img(src="images/slides/14/1.jpg")
-				footer.diagram__footer
-					.diagram__caption
-						| * более подробно см. в инструкции по применению. Некоторые препараты следует сочетать с другими средствами
-		mixin data
-			.footer__nav
-				nav.nav
-					ul.list
-						li.list__item
-							a.nav__item
-								.btn.btn--circle
-									img.scheme__img(src="images/up.png")
-						li.list__item
-							a.nav__item
-								.btn.btn--circle(data-popup-menu="popup-14")
-									img.scheme__img(src="images/menu.png")
-								.popup__wrapper.popup__wrapper--shadow-hidden
-									//-  POPUP 14 -//
-									+popup--menu('14')
-		+slide__footer('nav','data')
+			.box--top
+				.pane.pane--gray.pane--wide
+					h4.text
+						span.text--pink
+							| <b>Терапия Исентресс + ОБТ показала 45% вирусологическую эффективность</b>
+						span
+							| у пациентов с резистентностью к трем классам АРВ препаратов к 240 неделе терапии<sup>28</sup>
+			.box--bottom
+				.diagram.diagram--box
+					main.diagram__main
+						img.scheme__img(src="images/slides/14/1.jpg")
+					footer.diagram__footer
+						.diagram__btn(data-popup="popup-14")
+							| Дизайн исследования
+		+slide__footer()

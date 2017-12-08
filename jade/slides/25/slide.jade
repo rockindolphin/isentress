@@ -2,21 +2,30 @@ include ../../mixins.jade
 
 .swiper-slide.swiper__slide
 	#slide-25.slide
-		header.slide__header
+		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| SPIRAL: 
-				span.text
-					| Переключение на Исентресс (RAL) с ИП/р обеспечивает статистически значимое уменьшение показателей липидного профиля<sup>9</sup>
+					| Доказанная высокая эффективность
+				div.text
+					| Исентресса у детей<sup>24</sup>
+			img.header__icon(src="images/bear-icon.png")
 		main.slide__main
-			.box
-				.diagram.diagram--box
-					header.diagram__header
-						.header__title
-							| Изменение уровня показателей липидного профиля от исходного к 48 неделе
-					main.diagram__main
-						img.scheme__img(src="images/slides/25/1.png")
+			.diagram.diagram--box
+				main.diagram__main
+					img.scheme__img(src="images/slides/25/1.jpg")
 				footer.diagram__footer
-					.diagram__caption
-						| Martinez E, et al. AIDS. 2010;24:1697–1707
-		+slide__footer()
+					.diagram__btn(data-popup="popup-25")
+						| Дизайн исследования
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/left.png")
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/right.png")
+		+slide__footer('nav','data')

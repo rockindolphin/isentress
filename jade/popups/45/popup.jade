@@ -1,0 +1,32 @@
+
+include ../../mixins.jade
+
+#popup-45.popup--slide.popup.popup--hidden
+	header.popup__header
+		.popup__title
+			| 
+		.btn.popup__close(data-popup="popup-45")
+	main.popup__main
+		.box--left
+			ul.list.list--rhombus
+				li.list__item
+					| Мультицентровое, открытое исследование
+				li.list__item
+					| Длительность: 48 недель
+				li.list__item
+					| Критерии пациентов: РНК-ВИЧ <50 копий/мл, ИП/р не менее 6 месяцев
+				li.list__item
+					| Рандомизация 1:1
+				li.list__item
+					| Первичная конечная точка: доля пациентов без неудачи в терапии* на 48 неделе. Вторичная: доля пациентов без вирусологической неудачи (>50 копий) на 48 нед.
+			.footnote
+				| *пациенты не закончившие терапию 48 недель = неудача
+		.box--right
+			.diagram.diagram--box
+				main.diagram__main
+					img.scheme__img(src="images/popups/45/1.jpg")
+				footer.diagram__footer
+					.diagram__caption
+						| Martinez E, et al. AIDS. 2010;24:1697-1707
+	footer.popup__footer
+	

@@ -1,0 +1,40 @@
+
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-31.slide
+		header.slide__header.header--with-icon
+			.header__title
+				span.text--pink.text--upper
+					| Приятный вкус и жевательная форма Исентресса
+				div.text
+					| могут иметь значение для приверженности<sup>23</sup>
+			img.header__icon(src="images/bear-icon.png")
+		main.slide__main
+			.box
+				.box--left
+					.pane
+						h3
+							b
+								| 45% случаев пропуска приема АРВП по отзывам детей и их опекунов связана с самой терапией:
+						ul.list
+							li.list__item
+								| Побочные эффекты
+							li.list__item
+								| Большое число таблеток
+							li.list__item
+								| Трудно проглотить таблетку<sup>31</sup>
+				.box--right
+					.diagram.diagram--box
+						main.diagram__main
+							img.scheme__img(src="images/slides/31/1.png")
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/left.png")
+		+slide__footer('nav','data')
+	

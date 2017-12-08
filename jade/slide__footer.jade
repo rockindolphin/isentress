@@ -8,14 +8,17 @@ mixin slide__footer(name, data)
 				if name && name == 'nav'
 					+#{data}
 				.footer__tagline
-					span.text--green
-						| Начни 
-					span.text--pink
-						| и продолжай
 					div
-						| АРВТ сегодня ради завтра
+						| Вклад в оптимизацию терапии
+					span
+						|  для каждого пациента: 
+					span.text--green
+						| проблемы
+					span.text--pink
+						| и решения
 			if name && name == 'warning'
 				+#{data}
+		//-
 			.box--bottom
 				.footer__copy
 					span.footer__copy-logo

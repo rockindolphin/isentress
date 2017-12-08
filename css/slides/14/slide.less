@@ -2,16 +2,33 @@
 #slide-14{
 	.slide__header{
 		.header__title{
-			font-size: 37px;		
+
+		}
+	}
+	.header__icon{
+		position: relative;
+		top: -6px;
+	}
+	.box--top{
+		margin: 5px 0;
+		.pane{
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 	}
 	.slide__main{
-		align-items: center;
-		.diagram{
-			padding: 1em;
-		}	
-		.diagram__caption{
-			margin-top: 10px;
-		}	
+		flex-direction: column;
+		justify-content: space-around;		
+	}
+	.diagram--box{
+		margin-bottom: 10px;
+	}
+	.diagram__main{
+		width: 100%;
+		text-align: center;		
+	}
+	.diagram__footer{
+		position: relative;
+		justify-content: flex-end;
 	}
 }

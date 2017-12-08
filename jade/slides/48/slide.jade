@@ -1,0 +1,47 @@
+
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-48.slide
+		header.slide__header.header--with-icon
+			.header__title
+				span.text--pink
+					| SPIRAL-LIP:   
+				span.text
+					| увеличение минеральной плотности костнойткани в группе RAL<sup>15</sup>
+			img.header__icon(src="images/man-icon.png")
+		main.slide__main
+			.box
+				.box--left
+					ul.list.list--rhombus
+						li.list__item
+							| Увеличение минеральной плотности костной ткани (МПКТ) в группе ИП/р не отмечено
+						li.list__item
+							| В группе RAL выявлено статистически значимое увеличение по сравнению с исходным: <br>- Общей плотности костной ткани <br>- Общей плотности бедра <br>- Показателя Т-score бедра
+							p
+								| Показателя Т-score позвонков L1-L4 было близко к статистически значимому
+							p
+								i
+									| За 48 недель наметилась тенденция к увеличению МПКТ, но статистических различий между группами ИП/р и RAL за этот период не получено
+				.box--right
+					.diagram.diagram--box
+						header.diagram__header
+							.diagram__title
+								| Изменение минеральной плотности костной ткани
+						main.diagram__main
+							img.scheme__img(src="images/slides/48/1.jpg")
+						footer.diagram__footer
+							.diagram__btn(data-popup="popup-46")
+								| Дизайн исследования
+					.diagram__caption
+						| Curran AE, et al. CROI 2011. Abstract 845
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/right.png")
+		+slide__footer('nav','data')
+	

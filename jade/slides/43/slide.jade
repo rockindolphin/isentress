@@ -1,0 +1,46 @@
+
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-43.slide
+		header.slide__header.header--with-icon
+			.header__title
+				span.text--pink
+					| STARTMRK 240 недель: 
+				span.text
+					| ИСЕНТРЕСС оказывал меньшее влияние на сывороточные липиды по сравнению с эфавирензом<sup>5</sup>
+			img.header__icon(src="images/heart-icon.png")
+		main.slide__main
+			.box--bottom
+				.box--left
+					.diagram.diagram--box
+						header.diagram__header
+							.diagram__title
+								| Изменение показателей обмена вещества через 240 недель по сравнению с исходными<sup>5</sup>
+						main.diagram__main
+							img.scheme__img(src="images/slides/43/1.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								| Адаптировано из Rockstroh JK et al. 2013
+							.diagram__btn(data-popup="popup-43")
+								| Дизайн исследования
+				.box--right
+					.diagram.diagram--box
+						header.diagram__header
+							.diagram__title
+								| Доля пациентов, которым потребовалась гиполипидемическая терапия, через 240 недель в группе ИСЕНТРЕССа была ниже, чем в группе эфавирензца<sup>5</sup>
+						main.diagram__main
+							img.scheme__img(src="images/slides/43/2.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								| Адаптировано из Rockstroh JK et al. 2013
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/right.png")
+		+slide__footer('nav','data')
+	

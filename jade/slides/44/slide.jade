@@ -1,0 +1,67 @@
+
+include ../../mixins.jade
+
+.swiper-slide.swiper__slide
+	#slide-44.slide
+		header.slide__header.header--with-icon
+			.header__title
+				span.text--pink
+					| ИСЕНТРЕСС: 
+				span.text
+					| оказывает положительный эффект на липидный профиль в сравнении с атазановиром/р и дарунавиром/р<sup>17</sup>
+			img.header__icon(src="images/heart-icon.png")
+		main.slide__main
+			.box--left
+				.pane
+					ul.list.list--rhombus
+						li.list__item
+							| На фоне применения Исентресса изменения общего холестерина  незанчительны по сравнению с исходным, а показатели триглицеридов достоверно снизились по сравнению с исходными
+						li.list__item
+							| На фоне применения ингибиторов протеазы уровень ОХ и триглицеридов статистически значимо возрастали<sup>17</sup>
+			.box--right
+				.diagram.diagram--box
+					main.diagram__main
+						img.scheme__img.diagram__label(src="images/slides/44/5.jpg")
+						.diagram.diagram--box.btn(data-popup="popup-44-2")
+							header.diagram__header
+								.diagram__title
+									| Общий холестерин натощак (ОХС)
+							main.diagram__main
+								img.scheme__img(src="images/slides/44/1.jpg")
+						.diagram.diagram--box.btn(data-popup="popup-44-3")
+							header.diagram__header
+								.diagram__title
+									| ХС ЛВП натощак
+							main.diagram__main
+								img.scheme__img(src="images/slides/44/2.jpg")
+						.diagram.diagram--box.btn(data-popup="popup-44-4")
+							header.diagram__header
+								.diagram__title
+									| ХС ЛНП натощак 
+							main.diagram__main
+								img.scheme__img(src="images/slides/44/3.jpg")
+						.diagram.diagram--box.btn(data-popup="popup-44-5")
+							header.diagram__header
+								.diagram__title
+									| Триглицериды (ТГ) натощак 
+							main.diagram__main
+								img.scheme__img(src="images/slides/44/4.jpg")
+					footer.diagram__footer
+						.diagram__caption
+							| Адаптировано из Ofotokun et al. 4414
+						.diagram__btn(data-popup="popup-44")
+							| Дизайн исследования
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/left.png")
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/right.png")
+		+slide__footer('nav','data')
+	
