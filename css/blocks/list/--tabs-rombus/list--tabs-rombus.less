@@ -1,0 +1,29 @@
+.list--tabs-rombus{
+	list-style: none;
+	padding-left: 20px;
+	.list__item{
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 10px;
+		border-top-right-radius: 1px*@box-rad*2;
+		border-bottom-right-radius: 1px*@box-rad*2;
+		background: linear-gradient(to right, fade( @gray_7c7, 30% ) 0%,fade( @gray_7c7, 20% ) 100%);
+		position: relative;
+		min-height: 55px;
+		&:not(:first-child){
+			margin-top: 7px;
+		}
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			transform: translateY(3px) translateX(-20px);
+			width: 14px;
+			height: 10px;
+			background-image: url('../images/rhombus.png');
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+}
+

@@ -3,12 +3,26 @@ include ../../mixins.jade
 
 .swiper-slide.swiper__slide
 	#slide-40.slide
-		header.slide__header
+		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| 
-				div.text
-					| 
+					| Снижение показателей активности гепатита 
+				span.text
+					| после переключения на Исентресс с тенофовиром/эмтрицитабином<sup>35</sup>
+			img.header__icon(src="images/liver-icon.png", data-goto="liver")
 		main.slide__main
-		+slide__footer()
-	
+			.diagram.diagram--box
+				main.diagram__main
+					img.scheme__img(src="images/slides/40/1.jpg")
+				footer.diagram__footer
+					.diagram__btn(data-popup="popup-40")
+						| Дизайн исследования
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/left.png", data-goto="prev")
+		+slide__footer('nav','data')

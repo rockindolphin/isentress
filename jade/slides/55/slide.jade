@@ -3,12 +3,16 @@ include ../../mixins.jade
 
 .swiper-slide.swiper__slide
 	#slide-55.slide
-		header.slide__header
+		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| 
+					| Исентресс редко взаимодействует 
 				div.text
-					| 
+					| с другими лекарственными средствами для лечения ССЗ<sup>38</sup>
+			img.header__icon(src="images/heart-icon.png", data-goto="heart")
 		main.slide__main
+			.diagram.diagram--box
+				main.diagram__main
+					img.scheme__img(src="images/slides/55/1.jpg")
 		+slide__footer()
 	

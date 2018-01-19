@@ -5,44 +5,32 @@ include ../../mixins.jade
 		header.slide__header
 			.header__title
 				span.text--pink
-					| Начни и продолжай
-				span.text
-					| длительную АРВТ, в которой <br>нуждается Михаил
+					| Оптимизация терапии
+				div.text
+					| для пациентов с поражениями ЦНС
 		main.slide__main
-			.box--left
-				.pane
-					span.person__name
-						|Роман&nbsp;
-					span.person__age
-						|(53)
-				.pane.pane--gray
-					div.text--caption
-						|Роман, 53-летний преподаватель университета, планирует впервые начать антиретровирусную терапию. Страдает также сахарным диабетом 2 типа и заболеванием почек. Не курит. Признает, что иногда пропускает прием противодиабетических препаратов
-				.pane.pane--gray
-					ul.list.list--rhombus
-						li.list__item
-							|Вирусная нагрузка 53 000 копий/мл
-						li.list__item
-							|CD4 520 клеток в мм<sup>3</sup> 
-						li.list__item
-							|HLA-B5701 не выявлен
-						li.list__item
-							|Гликированный гемоглобин (HbA1c) 7,4%
-						li.list__item
-							|Общий холестерин 6,2 ммоль/л
-						li.list__item
-							|ЛПНП 3,02 ммоль/л
-						li.list__item
-							|ЛПВП 1,21 ммоль/л
-						li.list__item
-							|Триглицериды 3,63 ммоль/л
-						li.list__item
-							|Расчетная СКФ 75 мл/мин
-						li.list__item
-							|Принимает аторвастатин, гликлазид, метформин и препараты кальция
-				.pane.pane--pink
-					span.text.text--bold
-						|Следует ли включить ИСЕНТРЕСС <br>в схему антиретровирусной терапии?
-			.box--right
-				img.img(src="images/slides/08/1.png")
+			.box--top
+				.pane.pane--gray.pane--wide.pane--fact
+					h3.text
+						| <span class="text--pink">Эпидемиология: </span> около 40% пациентов с ВИЧ имеют нейро-когнитивные расстройства<sup>42</sup>
+			.box--bottom.box--flex-row
+				.box--left
+					div
+						b
+							| Ключевые риски:
+					.pane.pane--stick-left
+						ul.list.list--tabs-rombus
+							li.list__item(data-goto="22")
+								| Проникновение через ГЭБ
+							li.list__item(data-goto="33")
+								| Токсичность АРВТ для ЦНС
+							li.list__item(data-goto="57")
+								| Лекарственные взаимодействия с препаратами для коррекции неврологических расстройств
+				.box--right
+					.diagram.diagram--box
+						main.diagram__main
+							img.scheme__img(src="images/slides/08/1.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								| Частота нейрокогнитивных расстройств в зависимости от пола и АРВ терапии
 		+slide__footer()

@@ -8,8 +8,8 @@ include ../../mixins.jade
 				span.text--pink
 					| ИСЕНТРЕСС: 
 				span.text
-					| оказывает положительный эффект на липидный профиль в сравнении с атазановиром/р и дарунавиром/р<sup>17</sup>
-			img.header__icon(src="images/heart-icon.png")
+					| оказывает положительный эффект на липидный профиль в сравнении с атазанавиром/р и дарунавиром/р<sup>17</sup>
+			img.header__icon(src="images/heart-icon.png", data-goto="heart")
 		main.slide__main
 			.box--left
 				.pane
@@ -48,7 +48,7 @@ include ../../mixins.jade
 								img.scheme__img(src="images/slides/44/4.jpg")
 					footer.diagram__footer
 						.diagram__caption
-							| Адаптировано из Ofotokun et al. 4414
+							| Адаптировано из Ofotokun et al. 2014
 						.diagram__btn(data-popup="popup-44")
 							| Дизайн исследования
 		mixin data
@@ -58,10 +58,10 @@ include ../../mixins.jade
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/left.png")
+									img.scheme__img(src="images/left.png", data-goto="prev")
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/right.png")
+									img.scheme__img(src="images/right.png", data-goto="next")
 		+slide__footer('nav','data')
 	

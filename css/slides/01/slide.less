@@ -1,3 +1,49 @@
 #slide-1{
-	
+
+}
+
+#hlp_slider{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	background-color: @white;
+	.slide{
+		width: 100vw;
+		height: 100vh;
+		padding: 0;
+	}
+}
+
+#slide-hlp-1{
+	.slide__header{
+	    width: initial;
+    	display: inline-block;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		left: 8%;
+		top: 72%;
+		z-index: 3;
+		.header__title{
+			color: @white;
+		}
+	}
+	.footer__tagline{
+		position: absolute;
+		top: 86%;
+		left: 8%;
+	}
+	.slide__footer .footer__tagline .text--green, 
+	.slide__footer .footer__tagline .text--pink{
+		font-size: 44px;		
+	}	
+	.footer__infc{
+		position: absolute;
+		top: 96%;
+		left: 8%;
+		text-align: left;
+		display: inline-block;   
+		color: @black; 
+	}
 }

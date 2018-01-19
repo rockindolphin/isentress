@@ -3,12 +3,27 @@ include ../../mixins.jade
 
 .swiper-slide.swiper__slide
 	#slide-35.slide
-		header.slide__header
+		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| 
-				div.text
-					| 
+					| Частота нейропсихиатрических НЯ 
+				span.text
+					| при терапии ИСЕНТРЕССом (RAL) ниже, чем при терапии долутегравиром<sup>32</sup>
+			img.header__icon(src="images/brain-icon.png", data-goto="brain")
 		main.slide__main
-		+slide__footer()
+			.diagram.diagram--box
+				main.diagram__main
+					img.scheme__img(src="images/slides/35/1.jpg")
+				footer.diagram__footer
+					.diagram__btn(data-popup="popup-24")
+						| Дизайн исследования						
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/left.png", data-goto="prev")
+		+slide__footer('nav','data')
 	

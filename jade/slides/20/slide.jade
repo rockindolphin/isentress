@@ -5,10 +5,10 @@ include ../../mixins.jade
 		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| Высокая эффективность ИСЕНТРЕССа (Ral)  
+					| Высокая эффективность ИСЕНТРЕССа (Ral) 
 				div.text
 					| у пациентов с CD4+ < 50 кл/мкл					
-			img.header__icon(src="images/lungs-icon.png")
+			img.header__icon(src="images/lungs-icon.png", data-goto="lungs")
 		main.slide__main
 			.box--bottom
 				.diagram.diagram--box
@@ -21,5 +21,5 @@ include ../../mixins.jade
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/left.png")
+									img.scheme__img(src="images/left.png", data-goto="prev")
 		+slide__footer('nav','data')

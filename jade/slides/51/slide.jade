@@ -3,12 +3,32 @@ include ../../mixins.jade
 
 .swiper-slide.swiper__slide
 	#slide-51.slide
-		header.slide__header
+		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| 
-				div.text
-					| 
+					| Ралтегравир показал меньшее влияние 
+				span.text
+					| на костную ткань в сравнении с ИП (ACTG 5257)<sup>37</sup>
+			img.header__icon(src="images/man-icon.png", data-goto="man")
 		main.slide__main
-		+slide__footer()
-	
+			.box
+				.diagram.diagram--box
+					header.diagram__header
+						.diagram__title
+							| Анализ изменений минерализации костей через 96 недель терапии
+					main.diagram__main
+						img.scheme__img(src="images/slides/51/1.jpg")
+					footer.diagram__footer
+						.diagram__btn(data-popup="popup-15")
+							| Дизайн исследования
+				.diagram__caption
+					| ATV/r – атазанавир/ритонавир, RAL – ралтегравир, DRV/r – даруновир/ритоавир, PI/r – ингибиторы протеазы/ритонавир
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/left.png", data-goto="prev")
+		+slide__footer('nav','data')

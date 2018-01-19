@@ -3,12 +3,21 @@ include ../../mixins.jade
 
 .swiper-slide.swiper__slide
 	#slide-41.slide
-		header.slide__header
+		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| 
+					| Снижение показателей выраженности стеатоза печени 
 				div.text
-					| 
+					| после переключения на Исентресс + тенофовир/эмтрицитабин<sup>36</sup>
+			img.header__icon(src="images/liver-icon.png", data-goto="liver")
 		main.slide__main
+			.diagram.diagram--box
+				main.diagram__main
+					img.scheme__img(src="images/slides/41/1.jpg")
+				footer.diagram__footer
+					.diagram__caption
+						| CAP - контролируемый параметр затухания
+					.diagram__btn(data-popup="popup-41")
+						| Дизайн исследования
 		+slide__footer()
 	

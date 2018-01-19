@@ -1,12 +1,33 @@
-@import '../06/slide.less';
 
 #slide-7{
-	.slides_6-8_styles();
+	.slide__header{
+		.header__title{
+			font-size: 48px;
+		}
+	}
 	.slide__main{
-		.box--right{
-			position: relative;
-			top: -44px;
-			left: 8px;		
+		flex-direction: column;
+		.pane--fact{
+			margin-top: 5px;
+		}
+		.box--flex-row{
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		.box--left{
+			margin-right: 10px;
+		}
+		.list--tabs-rombus{
+			max-width: 350px;
+		}
+		.diagram__main{
+			width: 100%;
+			text-align: center;
+		}
+		.diagram__caption{
+			width: 100%;
+			text-align: center;
+			font-size: 16px;
 		}
 	}	
 }

@@ -9,7 +9,7 @@ include ../../mixins.jade
 					| STARTMRK 240 недель: 
 				span.text
 					| ИСЕНТРЕСС оказывал меньшее влияние на сывороточные липиды по сравнению с эфавирензом<sup>5</sup>
-			img.header__icon(src="images/heart-icon.png")
+			img.header__icon(src="images/heart-icon.png", data-goto="heart")
 		main.slide__main
 			.box--bottom
 				.box--left
@@ -22,7 +22,7 @@ include ../../mixins.jade
 						footer.diagram__footer
 							.diagram__caption
 								| Адаптировано из Rockstroh JK et al. 2013
-							.diagram__btn(data-popup="popup-43")
+							.diagram__btn(data-popup="popup-11")
 								| Дизайн исследования
 				.box--right
 					.diagram.diagram--box
@@ -41,6 +41,6 @@ include ../../mixins.jade
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/right.png")
+									img.scheme__img(src="images/right.png", data-goto="next")
 		+slide__footer('nav','data')
 	

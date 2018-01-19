@@ -27,6 +27,24 @@
 
 
 /* OTHER */
+@media (orientation: portrait) {
+	body {
+		&:before{
+			content: '';
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: @white url('../images/rotate_device.png') ;
+			background-repeat: no-repeat;
+			background-position: center;
+			color: @black;
+			z-index: 10;
+		}
+	}
+}
 
 *{
 	box-sizing: border-box;
@@ -148,6 +166,9 @@ h6{
 @import 'slides/75/slide.less';
 @import 'slides/76/slide.less';
 @import 'slides/77/slide.less';
+@import 'slides/78/slide.less';
+@import 'slides/79/slide.less';
+@import 'slides/80/slide.less';
 
 
 /* POPUPS */
@@ -157,6 +178,8 @@ h6{
 @import 'popups/14/popup.less';
 @import 'popups/15/popup.less';
 @import 'popups/16/popup.less';
+@import 'popups/17/popup.less';
+@import 'popups/21/popup.less';
 @import 'popups/23/popup.less';
 @import 'popups/24/popup.less';
 @import 'popups/25/popup.less';
@@ -164,9 +187,16 @@ h6{
 @import 'popups/27/popup.less';
 @import 'popups/27-2/popup.less';
 @import 'popups/28/popup.less';
+@import 'popups/32/popup.less';
 @import 'popups/33/popup.less';
+@import 'popups/34/popup.less';
+@import 'popups/35/popup.less';
+@import 'popups/36/popup.less';
+@import 'popups/37/popup.less';
 @import 'popups/38/popup.less';
 @import 'popups/39/popup.less';
+@import 'popups/40/popup.less';
+@import 'popups/41/popup.less';
 @import 'popups/42/popup.less';
 @import 'popups/43/popup.less';
 @import 'popups/44/popup.less';
@@ -177,5 +207,6 @@ h6{
 @import 'popups/45/popup.less';
 @import 'popups/46/popup.less';
 @import 'popups/49/popup.less';
+@import 'popups/51/popup.less';
 
 

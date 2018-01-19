@@ -3,12 +3,28 @@ include ../../mixins.jade
 
 .swiper-slide.swiper__slide
 	#slide-54.slide
-		header.slide__header
+		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| 
-				div.text
-					| 
+					| ИСЕНТРЕСС:     
+				span.text
+					| метаболизм отличается от такового у долутегравира<sup>1, 9, 10</sup>    
+			img.header__icon(src="images/bear-icon.png", data-goto="bear")
 		main.slide__main
+			.box
+				.box--left
+					ul.list.list--rhombus
+						li.list__item
+							| В отличие от других ингибиторов интегразы, <span class="text--pink text--bold">ИСЕНТРЕСС метаболизируется в основном путем UGT1A1-опосредованного глюкуронирования</span>
+						li.list__item
+							| Долутегравир метаболизируется под действием UGT1A1 и CYP450 (в меньшей степени)<sup>10</sup>
+						li.list__item
+							| Элвитегравир подвергается окислительному метаболизму под действием CYP3A4 (основной путь) и глюкуронированию под действием UGT1A1/3 (неосновной путь)<sup>9</sup>
+						li.list__item
+							| <span class="text--pink text--bold">ИСЕНТРЕСС</span> редко взаимодействует с другими лекарственными препаратами<sup>1</sup>
+				.box--right
+					.diagram.diagram--box
+						main.diagram__main
+							img.scheme__img(src="images/slides/54/1.jpg")
 		+slide__footer()
 	

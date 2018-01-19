@@ -8,14 +8,14 @@ include ../../mixins.jade
 				span.text--pink
 					| Сопоставимая переносимость ИСЕНТРЕССа (Ral)
 				div.text
-					| у пациентов с моноинфекцией ВИЧ и ко-инфекцией ВИЧ и вирусный гепатит В/С <sup>5,28</sup>
-			img.header__icon(src="images/liver-icon.png")
+					| у пациентов с моноинфекцией ВИЧ и ко-инфекцией ВИЧ и вирусный гепатит В/С<sup>33</sup>
+			img.header__icon(src="images/liver-icon.png", data-goto="liver")
 		main.slide__main
 			.diagram.diagram--box
 				main.diagram__main
 					img.scheme__img(src="images/slides/38/1.jpg")
 				footer.diagram__footer
-					.diagram__btn(data-popup="popup-38")
+					.diagram__btn(data-popup="popup-11")
 						| Дизайн исследования
 		mixin data
 			.footer__nav
@@ -24,9 +24,9 @@ include ../../mixins.jade
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/left.png")
+									img.scheme__img(src="images/left.png", data-goto="prev")
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/right.png")
+									img.scheme__img(src="images/right.png", data-goto="next")
 		+slide__footer('nav','data')

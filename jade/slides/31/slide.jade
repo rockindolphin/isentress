@@ -9,15 +9,15 @@ include ../../mixins.jade
 					| Приятный вкус и жевательная форма Исентресса
 				div.text
 					| могут иметь значение для приверженности<sup>23</sup>
-			img.header__icon(src="images/bear-icon.png")
+			img.header__icon(src="images/bear-icon.png", data-goto="bear")
 		main.slide__main
 			.box
 				.box--left
 					.pane
-						h3
+						h3.text--pink
 							b
 								| 45% случаев пропуска приема АРВП по отзывам детей и их опекунов связана с самой терапией:
-						ul.list
+						ul.list.text--bold
 							li.list__item
 								| Побочные эффекты
 							li.list__item
@@ -35,6 +35,6 @@ include ../../mixins.jade
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/left.png")
+									img.scheme__img(src="images/left.png", data-goto="prev")
 		+slide__footer('nav','data')
 	

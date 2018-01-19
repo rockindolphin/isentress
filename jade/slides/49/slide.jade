@@ -9,7 +9,7 @@ include ../../mixins.jade
 					| TROP:    
 				span.text
 					| увеличение минеральной плотности костной ткани при переключении с тенофовира на ралтегравир<sup>21</sup>
-			img.header__icon(src="images/man-icon.png")
+			img.header__icon(src="images/man-icon.png", data-goto="man")
 		main.slide__main
 			.box
 				.box--left
@@ -35,10 +35,10 @@ include ../../mixins.jade
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/left.png")
+									img.scheme__img(src="images/left.png", data-goto="prev")
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/right.png")
+									img.scheme__img(src="images/right.png", data-goto="next")
 		+slide__footer('nav','data')
 	

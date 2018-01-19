@@ -9,8 +9,8 @@ include ../../mixins.jade
 					| SPIRAL-LIP:  
 				span.text
 					| изменение распределения подкожной жировой клетчатки<sup>15</sup>
-			img.header__icon(src="images/bear-icon.png")
-			img.header__icon(src="images/man-icon.png")
+			img.header__icon(src="images/bear-icon.png", data-goto="bear")
+			img.header__icon(src="images/man-icon.png", data-goto="man")
 		main.slide__main
 			.box
 				.box--left
@@ -38,6 +38,6 @@ include ../../mixins.jade
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/left.png")
+									img.scheme__img(src="images/left.png", data-goto="prev")
 		+slide__footer('nav','data')
 	

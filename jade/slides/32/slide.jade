@@ -3,12 +3,42 @@ include ../../mixins.jade
 
 .swiper-slide.swiper__slide
 	#slide-32.slide
-		header.slide__header
+		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| 
-				div.text
-					| 
+					| ИСЕНТРЕСС: 
+				span.text
+					| профиль безопасности длительной терапии у ранее нелеченных пациентов<sup>5</sup>
+			img.header__icon(src="images/lungs-icon.png", data-goto="lungs")
 		main.slide__main
-		+slide__footer()
+			.box--top
+				.pane.pane--gray.pane--wide
+					h4.text.text--pink
+						| <b>STARTMRK</b> 240 недель: время до отмены терапии в связи с развитием НЯ* в группе Исентресса было достоверно больше, чем в группе эфавиренза	
+			.box--bottom.box--flex-row
+				.box--left
+					.pane
+						h4.text--bold
+							| В группе ИСЕНТРЕССа (Ral) наблюдалась меньшая частота отмены терапии в связи с развитием НЯ (5%) по сравнению с группой EFV (8,9%) к 240 неделе лечения (p <0,096)
+					.footnote
+						| * желудочно-кишечные расстройства, общие реакции,неврологические и психические расстройства, изменения со стороны кожи и мягких тканей
+				.box--right
+					.diagram.diagram--box
+						header.diagram__header
+							.diagram__title.text--bold
+								| Совокупный показатель прекращения в связи с НЯ (%)
+						main.diagram__main
+							img.scheme__img(src="images/slides/32/1.jpg")
+						footer.diagram__footer
+							.diagram__btn(data-popup="popup-11")
+								| Дизайн исследования
+		mixin data
+			.footer__nav
+				nav.nav
+					ul.list
+						li.list__item
+							a.nav__item
+								.btn.btn--circle
+									img.scheme__img(src="images/right.png", data-goto="next")
+		+slide__footer('nav','data')
 	

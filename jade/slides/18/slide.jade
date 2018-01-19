@@ -7,8 +7,8 @@ include ../../mixins.jade
 				span.text--pink
 					| QDMRK: 
 				span.text
-					| высокая эффективность ИСЕНТРЕССа (Ral) у пациентов с ВН>100 000 коп/мл<sup>22</sup>
-			img.header__icon(src="images/lungs-icon.png")
+					| высокая эффективность ИСЕНТРЕССа (Ral) <br>у пациентов с ВН>100 000 коп/мл<sup>22</sup>
+			img.header__icon(src="images/lungs-icon.png", data-goto="lungs")
 		main.slide__main
 			.box--top
 				.pane.pane--gray.pane--wide
@@ -20,9 +20,9 @@ include ../../mixins.jade
 						| 88,9 % включенных в исследование пациентов достигли уровня ВН <50 коп/мл к 48 нед терапии 
 				.box--right
 					.diagram__title.text--pink
-						| 84,2% − пациентов с исходной ВН>100 000 коп/мл достигли уровня ВН <50 коп/мл к 48 нед терапии 
+						| 84,2% − пациентов с исходной ВН>100 000 коп/мл достигли уровня ВН <50 коп/мл к 48 нед терапии  
 			.box--center
-				| ВН <50 коп/мл на 48 нед терапии с ралтегравиром (режим назначения 2 раза в сутки)									
+				| ВН <50 коп/мл на 48 нед терапии с ралтегравиром (режим назначения 2 раза в сутки)								
 			.box--bottom
 				.box--left
 					.diagram.diagram--box
@@ -42,5 +42,5 @@ include ../../mixins.jade
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/left.png")
+									img.scheme__img(src="images/left.png", data-goto="prev")
 		+slide__footer('nav','data')

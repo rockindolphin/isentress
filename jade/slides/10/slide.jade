@@ -5,43 +5,38 @@ include ../../mixins.jade
 		header.slide__header
 			.header__title
 				span.text--pink
-					| Начни и продолжай
-				span.text
-					| АРВТ, улучшающую результаты
+					| Оптимизация терапии 
+				div.text
+					| для ВИЧ-инфицированных детей
 		main.slide__main
 			.box--top
 				.pane.pane--gray.pane--wide.pane--fact
-					h5.text.text--pink
-						|В исследовании ACTG 5257 <b>ИСЕНТРЕСС</b> два раза в день продемонстировал меньшую кумулятивную недостаточную вирусологическую эффективность и прекращение терапии из-за плохой переносимости, чем в группе ингибиторов протеаз, усиленных ритонавиром, назначавшиеся 1 раз в сутки					
+					h3.text
+						| <span class="text--pink">Эпидемиология: </span> отсутствие АРВТ приводит к высокой смертности детей с ВИЧ<sup>44</sup>
 			.box--bottom.box--flex-row
 				.box--left
-					.pane
-						ul.list.list--rhombus
-							li.list__item
-								| <b>ИСЕНТРЕСС</b> был сопоставимым с атазанавиром/р и дарунавиром/р по частоте недостаточной вирусологической эффективности<sup>6</sup>
-							li.list__item
-								| <b>ИСЕНТРЕСС</b> превосходил атазанавир/р и не отличался от дарунавира/р по частоте прекращения АРВТ из-за токсичности<sup>6</sup>
+					div
+						b
+							| Ключевые риски:
 					.pane.pane--stick-left
-						ul.list.list--tabs
-							li.list__item
-								|Spring 2
-							li.list__item
-								|Резистентность
-							li.list__item
-								|Мета-анализ
-							li.list__item
-								|Режим дозирования
+						ul.list.list--tabs-rombus
+							li.list__item(data-goto="46")
+								| Нарушение физического развития
+							li.list__item(data-goto="53")
+								| Клинические проявления токсичности АРВТ
+							li.list__item(data-goto="14")
+								| Множественная резистентность
+							li.list__item(data-goto="31")
+								| Низкая приверженность
+							li.list__item(data-goto="54")
+								| Значимые лекарственные взаимодействия АРВП
+							li.list__item(data-goto="24")
+								| Ограниченный выбор АРВП для детей младшего возраста
 				.box--right
 					.diagram.diagram--box
-						header.diagram__header
-							img.scheme__img.diagram__label(src="images/slides/10/2.jpg")
-							.diagram__title
-								| Кумулятивная частота недостаточной вирусологической эффективности и прекращения терапии из-за плохой переносимости
 						main.diagram__main
 							img.scheme__img(src="images/slides/10/1.jpg")
 						footer.diagram__footer
 							.diagram__caption
-								| Adapted from Lennox et al. 2014
-							.diagram__btn(data-popup="popup-10")
-								|Дизайн исследования
+								| Смертность в зависимости от ВИЧ-статуса у детей 
 		+slide__footer()

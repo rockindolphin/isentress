@@ -8,8 +8,8 @@ include ../../mixins.jade
 				span.text--pink
 					| SPIRAL-LIP:   
 				span.text
-					| увеличение минеральной плотности костнойткани в группе RAL<sup>15</sup>
-			img.header__icon(src="images/man-icon.png")
+					| увеличение минеральной плотности костной ткани в группе RAL<sup>15</sup>
+			img.header__icon(src="images/man-icon.png", data-goto="man")
 		main.slide__main
 			.box
 				.box--left
@@ -17,7 +17,13 @@ include ../../mixins.jade
 						li.list__item
 							| Увеличение минеральной плотности костной ткани (МПКТ) в группе ИП/р не отмечено
 						li.list__item
-							| В группе RAL выявлено статистически значимое увеличение по сравнению с исходным: <br>- Общей плотности костной ткани <br>- Общей плотности бедра <br>- Показателя Т-score бедра
+							| В группе RAL выявлено статистически значимое увеличение по сравнению с исходным:
+							br
+							| - Общей плотности костной ткани 
+							br
+							| - Общей плотности бедра 
+							br
+							| - Показателя Т-score бедра
 							p
 								| Показателя Т-score позвонков L1-L4 было близко к статистически значимому
 							p
@@ -42,6 +48,6 @@ include ../../mixins.jade
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/right.png")
+									img.scheme__img(src="images/right.png", data-goto="next")
 		+slide__footer('nav','data')
 	

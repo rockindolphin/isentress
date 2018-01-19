@@ -1,31 +1,38 @@
 
 #slide-9{
+	.slide__header{
+		.header__title{
+			font-size: 48px;
+		}
+	}
 	.slide__main{
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: flex-start;
+		margin-top: 20px;		
 		.pane--fact{
-			margin-top: 32px;
+			margin-top: 5px;
 		}
 		.box--flex-row{
 			justify-content: space-between;
-			align-items: center;
+			align-items: flex-start;
 		}
 		.box--left{
 			margin-right: 10px;
-			&>.pane{
-				&:first-child{
-					position: relative;
-					top: 30px;
-					font-size: 17px;
-					line-height: 1.4;
-				}
+		}
+		.list--tabs-rombus{
+			max-width: 350px;
+			.list__item{
+				min-height: 45px;
 			}
 		}
-		.list--rhombus{
-			max-width: 340px;
+		.diagram__main{
+			width: 100%;
+			text-align: center;
 		}
-		.list--tabs{
-			font-size: 15px;
+		.diagram__caption{
+			width: 100%;
+			text-align: center;
+			font-size: 16px;
 		}
 	}
 }

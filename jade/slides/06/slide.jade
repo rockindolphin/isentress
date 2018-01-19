@@ -5,36 +5,34 @@ include ../../mixins.jade
 		header.slide__header
 			.header__title
 				span.text--pink
-					| Начни и продолжай
-				span.text
-					| длительную АРВТ, в которой <br>нуждается Михаил
+					| Оптимизация терапии для пациентов 
+				div.text
+					| с вирусным гепатитом и другими заболеваниями печени
 		main.slide__main
-			.box--left
-				.pane
-					span.person__name
-						|Михаил&nbsp;
-					span.person__age
-						|(33)
-				.pane.pane--gray
-					div.text--caption
-						|Михаил, 33-летний пациент, имевший секс с мужчинами. Работает дизайнером. Недавно были диагностированы ВИЧ-инфекция и хронический гепатит С, поэтому нуждается в лечении обоих инфекционных заболеваний. Курит
-				.pane.pane--gray
-					ul.list.list--rhombus
-						li.list__item
-							|Вирусная нагрузка 222 000 копий/мл
-						li.list__item
-							|CD4 323 клеток в мм<sup>3</sup> 
-						li.list__item
-							|HLA-B5701 не выявлен
-						li.list__item
-							|Антитела к вирусу гепатита С
-						li.list__item
-							|АЛТ 234 МЕ/мл
-						li.list__item
-							|HCV РНК 2 468 198 копий/мл (ПЦР)
-				.pane.pane--pink
-					span.text.text--bold
-						|Следует ли включить ИСЕНТРЕСС <br>в схему антиретровирусной терапии?
-			.box--right
-				img.img(src="images/slides/06/1.png")
+			.box--top
+				.pane.pane--gray.pane--wide.pane--fact
+					h4.text
+						| <span class="text--pink">Эпидемиология: </span> распространенность ВГС-инфекции среди ВИЧ-инфицированных лиц в РФ составляет от 30 до 90% в зависимости от принадлежности к разным группам риска<sup>40</sup>
+			.box--bottom.box--flex-row
+				.box--left
+					div
+						b
+							| Ключевые риски:
+					.pane.pane--stick-left
+						ul.list.list--tabs-rombus
+							li.list__item(data-goto="41")
+								| Прогрессирование фиброза и стеатоза печени
+							li.list__item(data-goto="23")
+								| Эффективность АРВТ у пациентов с ко-инфекцией
+							li.list__item(data-goto="37")
+								| Гепатотоксичность <br>АРВТ
+							li.list__item(data-goto="58")
+								| Лекарственные взаимодействия с противовирусной терапией гепатита С
+				.box--right
+					.diagram.diagram--box
+						main.diagram__main
+							img.scheme__img(src="images/slides/06/1.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								| Доля больных ВИЧ-инфекцией в РФ, у которых установлен диагноз хронического гепатита С и/или В
 		+slide__footer()

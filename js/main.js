@@ -2,28 +2,43 @@
 
 (function(){
 
-	var mySwiper = new Swiper('.swiper-container', {
+	var hlpSlider = new Swiper('#hlp_slider', {
 		speed: 400,
 		spaceBetween: 100,
 		direction: 'horizontal',
 		loop: false,
 		slidesPerView: 'auto',
-		prevButton: $('.swiper__prev'),
-		nextButton: $('.swiper__next'),
-		onInit: function(swiper){
-			swiper.slideTo(swiper.slides.length);
-		},
-		onSlideChangeStart: function(swiper){
-			var slide = swiper.slides[swiper.activeIndex];
-			$(slide).find('[data-nav]').removeClass('nav__item--active');
-			
-		},
-		onSlideChangeEnd: function(swiper){
-			var slide = swiper.slides[swiper.activeIndex];
-			$(slide).find('[data-nav='+(swiper.activeIndex+1)+']').addClass('nav__item--active');
+	});
+
+	var mainSlider = new Swiper('#main_slider', {
+		speed: 400,
+		spaceBetween: 100,
+		direction: 'horizontal',
+		loop: false,
+		slidesPerView: 'auto',
+		//prevButton: $('.swiper__prev'),
+		//nextButton: $('.swiper__next'),
+		keyboard: true,
+		preloadImages: false,
+		lazy: true,
+		on: {
+			init: function(){
+
+			},
+			slideChange: function(){
+				if( (this.activeIndex > 0) && (this.previousIndex === 0) ){
+					hlpSlider.slideTo(1);
+					$('.page__footer').css('zIndex',1);
+				}
+				if( (this.activeIndex === 0) && (this.previousIndex > 0) ){
+					hlpSlider.slideTo(0);
+					$('.page__footer').css('zIndex',0);
+				}
+			}
 		}
 	});
 
+	window.hlp = mainSlider;
 
 
 	var page__popups = $('.page__popups');
@@ -78,5 +93,40 @@
 		$(popup).hasClass('popup--hidden') ? showPopup(popup,'menu') : hidePopup(popup,'menu');
 	});
 
+	$('[data-goto]').click(function(){
+		var target = $(this).attr('data-goto');
+		var translateDuration = 0;
+		switch(target){
+			case 'next':
+				target = mainSlider.activeIndex+2;
+				translateDuration = 400;
+			break;
+			case 'prev':
+				target = mainSlider.activeIndex;
+				translateDuration = 400;
+			break;
+			case 'bear':
+				target = 10;
+			break;
+			case 'lungs':
+				target = 5;
+			break;
+			case 'brain':
+				target = 8;
+			break;
+			case 'liver':
+				target = 6;
+			break;
+			case 'heart':
+				target = 7;
+			break;
+			case 'man':
+				target = 9;
+			break;
+			default:
+			break;
+		}
+		mainSlider.slideTo( parseInt(target)-1, translateDuration );
+	});
 
 })();

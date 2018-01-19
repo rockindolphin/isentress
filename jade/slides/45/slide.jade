@@ -9,7 +9,7 @@ include ../../mixins.jade
 					| SPIRAL:
 				span.text
 					| Переключение на Исентресс (RAL) с ИП/р обеспечивает статистически значимое уменьшение показателей липидного профиля<sup>9</sup>
-			img.header__icon(src="images/heart-icon.png")
+			img.header__icon(src="images/heart-icon.png", data-goto="heart")
 		main.slide__main
 			.box
 				.diagram.diagram--box
@@ -30,6 +30,6 @@ include ../../mixins.jade
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/left.png")
+									img.scheme__img(src="images/left.png", data-goto="prev")
 		+slide__footer('nav','data')
 	

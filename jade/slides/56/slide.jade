@@ -3,12 +3,16 @@ include ../../mixins.jade
 
 .swiper-slide.swiper__slide
 	#slide-56.slide
-		header.slide__header
+		header.slide__header.header--with-icon
 			.header__title
 				span.text--pink
-					| 
+					| Потенциальные взаимодействия антиретровирусных 
 				div.text
-					| 
+					| и противотуберкулезных препаратов<sup>38</sup>
+			img.header__icon(src="images/lungs-icon.png", data-goto="lungs")
 		main.slide__main
+			.diagram.diagram--box
+				main.diagram__main
+					img.scheme__img(src="images/slides/56/1.jpg")
 		+slide__footer()
 	

@@ -9,13 +9,13 @@ include ../../mixins.jade
 					| Доказанная высокая эффективность
 				div.text
 					| Исентресса у детей<sup>24</sup>
-			img.header__icon(src="images/bear-icon.png")
+			img.header__icon(src="images/bear-icon.png", data-goto="bear")
 		main.slide__main
 			.diagram.diagram--box
 				main.diagram__main
 					img.scheme__img(src="images/slides/26/1.jpg")
 				footer.diagram__footer
-					.diagram__btn(data-popup="popup-26")
+					.diagram__btn(data-popup="popup-24")
 						| Дизайн исследования
 		mixin data
 			.footer__nav
@@ -24,5 +24,5 @@ include ../../mixins.jade
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/left.png")
+									img.scheme__img(src="images/left.png", data-goto="prev")
 		+slide__footer('nav','data')

@@ -5,40 +5,44 @@ include ../../mixins.jade
 		header.slide__header
 			.header__title
 				span.text--pink
-					| Начни и продолжай 
-				span.text
-					| длительную АРВТ, в которой <br>нуждается Анна
+					| Оптимизация терапии для пациентов 
+				div.text
+					| с сопутствующими заболеваниями
 		main.slide__main
-			.box--left
-				.pane
-					span.person__name
-						|Анна&nbsp;
-					span.person__age
-						|(47)
-				.pane.pane--gray
-					div.text--caption
-						|Анна, 47-летняя бухгалтер. Недавно обратилась к врачу с жалобами на хроническую усталость и необъяснимое снижение массы тела. Диагностирована ВИЧ-инфекция. В анамнезе депрессия. В семейном анамнезе − сердечно-сосудистые заболевания по материнской линии.
-				.pane.pane--gray
-					ul.list.list--rhombus
-						li.list__item
-							|Вирусная нагрузка 160 000 копий/мл
-						li.list__item
-							|CD4 281 клетка в мм<sup>3</sup> 
-						li.list__item
-							|HLA-B5701 не выявлен
-						li.list__item
-							|Расчетная СКФ 59 мл/мин
-						li.list__item
-							|Общий холестерин 6,1 ммоль/л
-						li.list__item
-							|ЛПВП 1,12 ммоль/л
-						li.list__item
-							|ЛПНП 3,8 ммоль/л
-						li.list__item
-							|Получает аторвастатин и миртазапин
-				.pane.pane--pink
-					span.text.text--bold
-						|Следует ли включить ИСЕНТРЕСС <br>в схему антиретровирусной терапии?
-			.box--right
-				img.img(src="images/slides/07/1.png")
+			.box--top
+				.pane.pane--gray.pane--wide.pane--fact
+					h3.text
+						| <span class="text--pink">Эпидемиология: </span> высокая частота сопутствующих заболеваний у пациентов с ВИЧ<sup>41</sup>
+			.box--bottom.box--flex-row
+				.box--left
+					div
+						b
+							| Ключевые риски:
+					.pane.pane--stick-left
+						ul.list.list--tabs-rombus
+							li.list__item(data-goto="43")
+								| Дислипидемия
+							li.list__item(data-goto="42")
+								| Вторичное поражение почек
+							li.list__item(data-goto="52")
+								| Сахарный диабет
+							li.list__item(data-goto="36")
+								| Возрастные изменения
+							li.list__item(data-goto="55")
+								| Лекарственные взаимодействия с сопутствующей терапией:
+								br
+								| - гипотензивной
+								br
+								| - гиполипидемической
+								br
+								| - гипогликемической
+								br
+								| - антиагрегантной
+				.box--right
+					.diagram.diagram--box
+						main.diagram__main
+							img.scheme__img(src="images/slides/07/1.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								| Бремя сопутствующих заболеваний у пациентов с ВИЧ
 		+slide__footer()

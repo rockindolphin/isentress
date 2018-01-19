@@ -3,31 +3,38 @@ include ../../mixins.jade
 .swiper-slide.swiper__slide
 	#slide-5.slide
 		header.slide__header
-			.header__title.text--center
+			.header__title
 				span.text--pink
-					| Встречайте...
+					| Оптимизация терапии 
+				div.text
+					| для пациентов с туберкулезом
 		main.slide__main
-			.img__wrapper
-				img.img(src="images/slides/05/1.png")
-				.img__label
-					span.person__name
-						|Анна 
-					span.person__age
-						|(47)
-					div.text
-						|Сопутствующие заболевания
-				.img__label
-					span.person__name
-						|Михаил 
-					span.person__age
-						|(33)
-					div.text
-						|HCV ко-инфекция
-				.img__label
-					span.person__name
-						|Роман
-					span.person__age
-						|(53)
-					div.text
-						|Прием других препаратов																						
+			.box--top
+				.pane.pane--gray.pane--wide.pane--fact
+					h3.text
+						| <span class="text--pink">Эпидемиология: </span> число пациентов с ко-инфекцией ВИЧ/ТБ в РФ увеличивается<sup>39</sup>
+			.box--bottom.box--flex-row
+				.box--left
+					div
+						b
+							| Ключевые риски:
+					.pane.pane--stick-left
+						ul.list.list--tabs-rombus
+							li.list__item(data-goto="16")
+								| Высокая вирусная нагрузка
+							li.list__item(data-goto="19")
+								| Низкий уровень CD4+ клеток
+							li.list__item(data-goto="21")
+								| Эффективность АРВТ<br> у пациента с ко-инфекцией
+							li.list__item(data-goto="32")
+								| Высокая токсичность<br> противотуберкулезной терапии
+							li.list__item(data-goto="56")
+								| Лекарственные<br> взаимодействия с ПТТ
+				.box--right
+					.diagram.diagram--box
+						main.diagram__main
+							img.scheme__img(src="images/slides/05/1.jpg")
+						footer.diagram__footer
+							.diagram__caption
+								| Распространенность моноинфекции ТБ и ко-инфекции ВИЧ/ТБ в РФ (на 100 000 населения)
 		+slide__footer()

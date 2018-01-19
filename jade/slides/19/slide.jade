@@ -7,24 +7,25 @@ include ../../mixins.jade
 				span.text--pink
 					| QDMRK:  
 				span.text
-					| высокая эффективность ИСЕНТРЕССа (Ral)у пациентов с исходным уровнем CD4 ≤ 200/мл<sup>22</sup>
-			img.header__icon(src="images/lungs-icon.png")
+					| высокая эффективность ИСЕНТРЕССа (Ral) <br>у пациентов с исходным уровнем CD4 ≤ 200/мл<sup>22</sup>
+			img.header__icon(src="images/lungs-icon.png", data-goto="lungs")
 		main.slide__main
 			.box--top
 				.pane.pane--gray.pane--wide
 					h4.text.text--pink
 						| мультицентровое, двойное, рандомизированное, контролируемое исследование (non-inferiority)
 			.box--center
-				| Более 80%, имевшим исходный уровень CD 4 ≤ 200/мл достигли уровня ВН <50 коп/мл к 48 нед терапии 									
+				b
+					| Более 80%, имевшим исходный уровень CD 4 ≤ 200/мл достигли уровня ВН <50 коп/мл к 48 нед терапии 									
 			.box--center.diagram__title
-				| ВН <50 коп/мл на 48 нед терапии с ралтегравиром (режим назначения 2 раза в сутки) 									
+				| ВН <50 коп/мл на 48 нед терапии с ралтегравиром (режим назначения 2 раза в сутки)									
 			.box--bottom
 				.diagram.diagram--box
 					main.diagram__main
 						img.scheme__img(src="images/slides/19/1.jpg")
 			footer.diagram__footer
 				.diagram__caption
-					| Raltegravir once daily or twice daily in previously untreated patients with HIV-1: a randomised, active-controlled, phase 3 non-inferiority trial. J oseph J Eron Jr, et al. Lancet Infect Dis 2011; 11: 907–15  
+					| Raltegravir once daily or twice daily in previously untreated patients with HIV-1: a randomised, active-controlled, phase 3 non-inferiority trial. J oseph J Eron Jr, et al. Lancet Infect Dis 2011; 11: 907–15   
 		mixin data
 			.footer__nav
 				nav.nav
@@ -32,5 +33,5 @@ include ../../mixins.jade
 						li.list__item
 							a.nav__item
 								.btn.btn--circle
-									img.scheme__img(src="images/right.png")
+									img.scheme__img(src="images/right.png", data-goto="next")
 		+slide__footer('nav','data')
