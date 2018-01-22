@@ -2,12 +2,6 @@
 
 (function(){
 
-	$('.swiper-slide img.scheme__img').each(function(){
-		var src = $(this).attr('src');
-		var preloader = $('<div class="swiper-lazy-preloader"></div>');
-		$(this).attr('src','').attr('data-src', src).addClass('swiper-lazy').after(preloader);
-	});
-
 	var hlpSlider = new Swiper('#hlp_slider', {
 		speed: 400,
 		spaceBetween: 100,

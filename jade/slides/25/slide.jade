@@ -12,7 +12,8 @@ include ../../mixins.jade
 		main.slide__main
 			.diagram.diagram--box
 				main.diagram__main
-					img.scheme__img(src="images/slides/25/1.jpg")
+					img.scheme__img.swiper-lazy(data-src="images/slides/25/1.jpg")
+					.swiper-lazy-preloader
 				footer.diagram__footer
 					.diagram__btn(data-popup="popup-24")
 						| Дизайн исследования
