@@ -47,6 +47,8 @@
 		}
 	});
 
+	window.mainSlider = mainSlider;
+
 	var page__popups = $('.page__popups');
 	var page__header = $('.page__header');
 	var page__footer = $('.page__footer');
