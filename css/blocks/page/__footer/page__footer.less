@@ -9,6 +9,9 @@
 	padding-left: 1px*@page-left;
 	padding-right: 1px*@page-right;
 	position: relative;
+	z-index: 2;
+	transform: translateY(0%);
+	transition: transform 0.3s;
 	&:after{
 		content: '';
 		position: absolute;
@@ -36,6 +39,7 @@
 	}
 	.list__item{
 		width: 100%;
+		max-width: 135px;
 		border-top-left-radius: 1px*@nav-item-rad;
 		border-top-right-radius: 1px*@nav-item-rad;
 		background-color: @gray_bab;
@@ -71,3 +75,4 @@
 }
 
 @import '--shadow-hidden/page__footer--shadow-hidden.less';
+@import '--hidden/page__footer--hidden.less';

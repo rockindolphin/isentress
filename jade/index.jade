@@ -1,5 +1,6 @@
 include mixins.jade
 
+- function pDate() {return Math.trunc(new Date().getTime()/10000);}
 doctype html
 html
 	head
@@ -8,381 +9,385 @@ html
 		meta(name="apple-mobile-web-app-capable", content="yes")
 		meta(name="msapplication-tap-highlight", content="no")
 		title Isentress
-		link(rel="stylesheet", href="css/style.css")
+		link(rel="stylesheet", href="css/style.css?ver=" + pDate())
 
-	body.page
-		include header.jade
-		main.page__main
-			#hlp_slider.swiper-container.swiper__container.loading
-				.swiper-wrapper.swiper__wrapper
-					.swiper-slide.swiper__slide
-						#slide-hlp-1.slide
-							.slide__footer
-								.img__wrapper
-									img.img(src="images/slides/01/1.jpg")
-									.slide__header
-										.header__title
-											div
-												| Вклад в оптимизацию терапии
-											div
-												| для каждого пациента:
-									.footer__tagline
-										span.text--green
-											| проблемы 
-										span.text--pink
-											| и решения
-									.footer__infc
-										| INFC-1100062-0052 | 01.2018 
-					.swiper-slide.swiper__slide
-						#slide-hlp-2.slide
+	body
+		.page
+			include header.jade
+			main.page__main
+				#hlp_slider.swiper-container.swiper__container.loading
+					.swiper-wrapper.swiper__wrapper
+						.swiper-slide.swiper__slide
+							#slide-hlp-1.slide
+								.slide__footer
+									.img__wrapper
+										img.img(src="images/slides/01/1.jpg")
+										.slide__header
+											.header__title
+												div
+													| Вклад в оптимизацию терапии
+												div
+													| для каждого пациента:
+										.footer__tagline
+											span.text--green
+												| проблемы 
+											span.text--pink
+												| и решения
+										.footer__infc
+											| INFC-1100062-0052 | 01.2018 
+						.swiper-slide.swiper__slide
+							#slide-hlp-2.slide
+						- for (var x = 3; x <= 80; x++)
+							.swiper-slide.swiper__slide
+								.slide(id='slide-hlp-'+x)					
 
-			#main_slider.swiper-container.swiper__container
-				.swiper-wrapper.swiper__wrapper
-					
-					//-  SLIDE 1 -//
-					include slides/01/slide.jade
-
-					//-  SLIDE 2 -//
-					include slides/02/slide.jade
-
-					//-  SLIDE 3 -//
-					include slides/03/slide.jade
-
-					//-  SLIDE 4 -//
-					include slides/04/slide.jade
-
-					//-  SLIDE 5 -//
-					include slides/05/slide.jade
-
-					//-  SLIDE 6 -//
-					include slides/06/slide.jade
-				
-					//-  SLIDE 7 -//
-					include slides/07/slide.jade
-				
-					//-  SLIDE 8 -//
-					include slides/08/slide.jade
-
-					//-  SLIDE 9 -//
-					include slides/09/slide.jade
-					
-					//-  SLIDE 10 -//
-					include slides/10/slide.jade
-					
-					//-  SLIDE 11 -//
-					include slides/11/slide.jade
-				
-					//-  SLIDE 12 -//
-					include slides/12/slide.jade
-					
-					//-  SLIDE 13 -//
-					include slides/13/slide.jade
-					
-					//-  SLIDE 14 -//
-					include slides/14/slide.jade
-					
-					//-  SLIDE 15 -//
-					include slides/15/slide.jade
+				#main_slider.swiper-container.swiper__container
+					.swiper-wrapper.swiper__wrapper
 						
-					//-  SLIDE 16 -//
-					include slides/16/slide.jade
-					
-					//-  SLIDE 17 -//
-					include slides/17/slide.jade
-						
-					//-  SLIDE 18 -//
-					include slides/18/slide.jade
+						//-  SLIDE 1 -//
+						include slides/01/slide.jade
 
-					//-  SLIDE 19 -//
-					include slides/19/slide.jade
-						
-					//-  SLIDE 20 -//
-					include slides/20/slide.jade
+						//-  SLIDE 2 -//
+						include slides/02/slide.jade
 
-					//-  SLIDE 21 -//
-					include slides/21/slide.jade
+						//-  SLIDE 3 -//
+						include slides/03/slide.jade
+
+						//-  SLIDE 4 -//
+						include slides/04/slide.jade
 				
-					//-  SLIDE 22 -//
-					include slides/22/slide.jade
+						//-  SLIDE 5 -//
+						include slides/05/slide.jade
+					
+						//-  SLIDE 6 -//
+						include slides/06/slide.jade
+					
+						//-  SLIDE 7 -//
+						include slides/07/slide.jade
+					
+						//-  SLIDE 8 -//
+						include slides/08/slide.jade
 
-					//-  SLIDE 23 -//
-					include slides/23/slide.jade
-
-					//-  SLIDE 24 -//
-					include slides/24/slide.jade
-				
-					//-  SLIDE 25 -//
-					include slides/25/slide.jade
-					
-					//-  SLIDE 26 -//
-					include slides/26/slide.jade
-					
-					//-  SLIDE 27 -//
-					include slides/27/slide.jade
-					
-					//-  SLIDE 28 -//
-					include slides/28/slide.jade
-					
-					//-  SLIDE 29 -//
-					include slides/29/slide.jade
-					
-					//-  SLIDE 30 -//
-					include slides/30/slide.jade
-					
-					//-  SLIDE 31 -//
-					include slides/31/slide.jade
-
-					//-  SLIDE 32 -//
-					include slides/32/slide.jade
-					
-					//-  SLIDE 33 -//
-					include slides/33/slide.jade
-
-					//-  SLIDE 34 -//
-					include slides/34/slide.jade
-					
-					//-  SLIDE 35 -//
-					include slides/35/slide.jade
-					
-					//-  SLIDE 36 -//
-					include slides/36/slide.jade
-					
-					//-  SLIDE 37 -//
-					include slides/37/slide.jade
+						//-  SLIDE 9 -//
+						include slides/09/slide.jade
 						
-					//-  SLIDE 38 -//
-					include slides/38/slide.jade
-
-					//-  SLIDE 39 -//
-					include slides/39/slide.jade
+						//-  SLIDE 10 -//
+						include slides/10/slide.jade
+						
+						//-  SLIDE 11 -//
+						include slides/11/slide.jade
 					
-					//-  SLIDE 40 -//
-					include slides/40/slide.jade
+						//-  SLIDE 12 -//
+						include slides/12/slide.jade
+						
+						//-  SLIDE 13 -//
+						include slides/13/slide.jade
+						
+						//-  SLIDE 14 -//
+						include slides/14/slide.jade
+						
+						//-  SLIDE 15 -//
+						include slides/15/slide.jade
+							
+						//-  SLIDE 16 -//
+						include slides/16/slide.jade
+						
+						//-  SLIDE 17 -//
+						include slides/17/slide.jade
+							
+						//-  SLIDE 18 -//
+						include slides/18/slide.jade
 
-					//-  SLIDE 41 -//
-					include slides/41/slide.jade
+						//-  SLIDE 19 -//
+						include slides/19/slide.jade
+							
+						//-  SLIDE 20 -//
+						include slides/20/slide.jade
 
-					//-  SLIDE 42 -//
-					include slides/42/slide.jade
+						//-  SLIDE 21 -//
+						include slides/21/slide.jade
+					
+						//-  SLIDE 22 -//
+						include slides/22/slide.jade
 
-					//-  SLIDE 43 -//
-					include slides/43/slide.jade
+						//-  SLIDE 23 -//
+						include slides/23/slide.jade
 
-					//-  SLIDE 44 -//
-					include slides/44/slide.jade
+						//-  SLIDE 24 -//
+						include slides/24/slide.jade
+					
+						//-  SLIDE 25 -//
+						include slides/25/slide.jade
+						
+						//-  SLIDE 26 -//
+						include slides/26/slide.jade
+						
+						//-  SLIDE 27 -//
+						include slides/27/slide.jade
+						
+						//-  SLIDE 28 -//
+						include slides/28/slide.jade
+						
+						//-  SLIDE 29 -//
+						include slides/29/slide.jade
+						
+						//-  SLIDE 30 -//
+						include slides/30/slide.jade
+						
+						//-  SLIDE 31 -//
+						include slides/31/slide.jade
 
-					//-  SLIDE 45 -//
-					include slides/45/slide.jade
+						//-  SLIDE 32 -//
+						include slides/32/slide.jade
+						
+						//-  SLIDE 33 -//
+						include slides/33/slide.jade
 
-					//-  SLIDE 46 -//
-					include slides/46/slide.jade
+						//-  SLIDE 34 -//
+						include slides/34/slide.jade
+						
+						//-  SLIDE 35 -//
+						include slides/35/slide.jade
+						
+						//-  SLIDE 36 -//
+						include slides/36/slide.jade
+						
+						//-  SLIDE 37 -//
+						include slides/37/slide.jade
+							
+						//-  SLIDE 38 -//
+						include slides/38/slide.jade
 
-					//-  SLIDE 47 -//
-					include slides/47/slide.jade
+						//-  SLIDE 39 -//
+						include slides/39/slide.jade
+						
+						//-  SLIDE 40 -//
+						include slides/40/slide.jade
 
-					//-  SLIDE 48 -//
-					include slides/48/slide.jade
+						//-  SLIDE 41 -//
+						include slides/41/slide.jade
 
-					//-  SLIDE 49 -//
-					include slides/49/slide.jade
+						//-  SLIDE 42 -//
+						include slides/42/slide.jade
 
-					//-  SLIDE 50 -//
-					include slides/50/slide.jade
+						//-  SLIDE 43 -//
+						include slides/43/slide.jade
 
-					//-  SLIDE 51 -//
-					include slides/51/slide.jade
+						//-  SLIDE 44 -//
+						include slides/44/slide.jade
 
-					//-  SLIDE 52 -//
-					include slides/52/slide.jade
+						//-  SLIDE 45 -//
+						include slides/45/slide.jade
 
-					//-  SLIDE 53 -//
-					include slides/53/slide.jade
+						//-  SLIDE 46 -//
+						include slides/46/slide.jade
 
-					//-  SLIDE 54 -//
-					include slides/54/slide.jade
+						//-  SLIDE 47 -//
+						include slides/47/slide.jade
 
-					//-  SLIDE 55 -//
-					include slides/55/slide.jade
+						//-  SLIDE 48 -//
+						include slides/48/slide.jade
 
-					//-  SLIDE 56 -//
-					include slides/56/slide.jade
+						//-  SLIDE 49 -//
+						include slides/49/slide.jade
 
-					//-  SLIDE 57 -//
-					include slides/57/slide.jade
+						//-  SLIDE 50 -//
+						include slides/50/slide.jade
 
-					//-  SLIDE 58 -//
-					include slides/58/slide.jade
+						//-  SLIDE 51 -//
+						include slides/51/slide.jade
 
-					//-  SLIDE 59 -//
-					include slides/59/slide.jade
+						//-  SLIDE 52 -//
+						include slides/52/slide.jade
 
-					//-  SLIDE 60 -//
-					include slides/60/slide.jade
+						//-  SLIDE 53 -//
+						include slides/53/slide.jade
 
-					//-  SLIDE 61 -//
-					include slides/61/slide.jade
+						//-  SLIDE 54 -//
+						include slides/54/slide.jade
 
-					//-  SLIDE 62 -//
-					include slides/62/slide.jade
+						//-  SLIDE 55 -//
+						include slides/55/slide.jade
 
-					//-  SLIDE 63 -//
-					include slides/63/slide.jade
+						//-  SLIDE 56 -//
+						include slides/56/slide.jade
 
-					//-  SLIDE 64 -//
-					include slides/64/slide.jade
+						//-  SLIDE 57 -//
+						include slides/57/slide.jade
 
-					//-  SLIDE 65 -//
-					include slides/65/slide.jade
+						//-  SLIDE 58 -//
+						include slides/58/slide.jade
 
-					//-  SLIDE 66 -//
-					include slides/66/slide.jade
+						//-  SLIDE 59 -//
+						include slides/59/slide.jade
 
-					//-  SLIDE 67 -//
-					include slides/67/slide.jade
+						//-  SLIDE 60 -//
+						include slides/60/slide.jade
 
-					//-  SLIDE 68 -//
-					include slides/68/slide.jade
+						//-  SLIDE 61 -//
+						include slides/61/slide.jade
 
-					//-  SLIDE 69 -//
-					include slides/69/slide.jade
+						//-  SLIDE 62 -//
+						include slides/62/slide.jade
 
-					//-  SLIDE 70 -//
-					include slides/70/slide.jade
+						//-  SLIDE 63 -//
+						include slides/63/slide.jade
 
-					//-  SLIDE 71 -//
-					include slides/71/slide.jade
+						//-  SLIDE 64 -//
+						include slides/64/slide.jade
 
-					//-  SLIDE 72 -//
-					include slides/72/slide.jade
+						//-  SLIDE 65 -//
+						include slides/65/slide.jade
 
-					//-  SLIDE 73 -//
-					include slides/73/slide.jade
+						//-  SLIDE 66 -//
+						include slides/66/slide.jade
 
-					//-  SLIDE 74 -//
-					include slides/74/slide.jade
+						//-  SLIDE 67 -//
+						include slides/67/slide.jade
 
-					//-  SLIDE 75 -//
-					include slides/75/slide.jade
+						//-  SLIDE 68 -//
+						include slides/68/slide.jade
 
-					//-  SLIDE 76 -//
-					include slides/76/slide.jade
+						//-  SLIDE 69 -//
+						include slides/69/slide.jade
 
-					//-  SLIDE 77 -//
-					include slides/77/slide.jade
+						//-  SLIDE 70 -//
+						include slides/70/slide.jade
 
-					//-  SLIDE 78 -//
-					include slides/78/slide.jade
+						//-  SLIDE 71 -//
+						include slides/71/slide.jade
 
-					//-  SLIDE 79 -//
-					include slides/79/slide.jade
+						//-  SLIDE 72 -//
+						include slides/72/slide.jade
 
-					//-  SLIDE 80 -//
-					include slides/80/slide.jade
+						//-  SLIDE 73 -//
+						include slides/73/slide.jade
 
-		include footer.jade
-		.page__popups.page__popups--shadow-hidden
+						//-  SLIDE 74 -//
+						include slides/74/slide.jade
+
+						//-  SLIDE 75 -//
+						include slides/75/slide.jade
+
+						//-  SLIDE 76 -//
+						include slides/76/slide.jade
+
+						//-  SLIDE 77 -//
+						include slides/77/slide.jade
+
+						//-  SLIDE 78 -//
+						include slides/78/slide.jade
+
+						//-  SLIDE 79 -//
+						include slides/79/slide.jade
+
+						//-  SLIDE 80 -//
+						include slides/80/slide.jade
+
+			include footer.jade
+			.page__popups.page__popups--shadow-hidden
+					
+				//-  POPUP 11 -//
+				include popups/11/popup.jade			
 				
-			//-  POPUP 11 -//
-			include popups/11/popup.jade			
+				//-  POPUP 12 -//
+				include popups/12/popup.jade					
 			
-			//-  POPUP 12 -//
-			include popups/12/popup.jade					
-		
-			//-  POPUP 13 -//
-			include popups/13/popup.jade			
-			
-			//-  POPUP 14 -//
-			include popups/14/popup.jade			
+				//-  POPUP 13 -//
+				include popups/13/popup.jade			
 				
-			//-  POPUP 15 -//
-			include popups/15/popup.jade			
-				
-			//-  POPUP 16 -//
-			include popups/16/popup.jade			
-				
-			//-  POPUP 17 -//
-			include popups/17/popup.jade
-				
-			//-  POPUP 21 -//
-			include popups/21/popup.jade
-						
-			//-  POPUP 24 -//
-			include popups/24/popup.jade
-						
-			//-  POPUP 25 -//
-			include popups/25/popup.jade
-						
-			//-  POPUP 26 -//
-			include popups/26/popup.jade
-						
-			//-  POPUP 27 -//
-			include popups/27/popup.jade
-						
-			//-  POPUP 27-2 -//
-			include popups/27-2/popup.jade
-						
-			//-  POPUP 28 -//
-			include popups/28/popup.jade
-												
-			//-  POPUP 32 -//
-			include popups/32/popup.jade
-												
-			//-  POPUP 33 -//
-			include popups/33/popup.jade
-												
-			//-  POPUP 34 -//
-			include popups/34/popup.jade
-												
-			//-  POPUP 36 -//
-			include popups/36/popup.jade
-												
-			//-  POPUP 38 -//
-			include popups/38/popup.jade
+				//-  POPUP 14 -//
+				include popups/14/popup.jade			
+					
+				//-  POPUP 15 -//
+				include popups/15/popup.jade			
+					
+				//-  POPUP 16 -//
+				include popups/16/popup.jade			
+					
+				//-  POPUP 17 -//
+				include popups/17/popup.jade
+					
+				//-  POPUP 21 -//
+				include popups/21/popup.jade
 							
-			//-  POPUP 39 -//
-			include popups/39/popup.jade
+				//-  POPUP 24 -//
+				include popups/24/popup.jade
 							
-			//-  POPUP 40 -//
-			include popups/40/popup.jade
+				//-  POPUP 25 -//
+				include popups/25/popup.jade
 							
-			//-  POPUP 41 -//
-			include popups/41/popup.jade
+				//-  POPUP 26 -//
+				include popups/26/popup.jade
 							
-			//-  POPUP 42 -//
-			include popups/42/popup.jade
+				//-  POPUP 27 -//
+				include popups/27/popup.jade
 							
-			//-  POPUP 43 -//
-			include popups/43/popup.jade
+				//-  POPUP 27-2 -//
+				include popups/27-2/popup.jade
 							
-			//-  POPUP 44 -//
-			include popups/44/popup.jade
-							
-			//-  POPUP 44-2 -//
-			include popups/44-2/popup.jade
-							
-			//-  POPUP 44-3 -//
-			include popups/44-3/popup.jade
-							
-			//-  POPUP 44-4 -//
-			include popups/44-4/popup.jade
-							
-			//-  POPUP 44-5 -//
-			include popups/44-5/popup.jade
-							
-			//-  POPUP 45 -//
-			include popups/45/popup.jade
-							
-			//-  POPUP 46 -//
-			include popups/46/popup.jade
+				//-  POPUP 28 -//
+				include popups/28/popup.jade
+													
+				//-  POPUP 32 -//
+				include popups/32/popup.jade
+													
+				//-  POPUP 33 -//
+				include popups/33/popup.jade
+													
+				//-  POPUP 34 -//
+				include popups/34/popup.jade
+													
+				//-  POPUP 36 -//
+				include popups/36/popup.jade
+													
+				//-  POPUP 38 -//
+				include popups/38/popup.jade
+								
+				//-  POPUP 39 -//
+				include popups/39/popup.jade
+								
+				//-  POPUP 40 -//
+				include popups/40/popup.jade
+								
+				//-  POPUP 41 -//
+				include popups/41/popup.jade
+								
+				//-  POPUP 42 -//
+				include popups/42/popup.jade
+								
+				//-  POPUP 43 -//
+				include popups/43/popup.jade
+								
+				//-  POPUP 44 -//
+				include popups/44/popup.jade
+								
+				//-  POPUP 44-2 -//
+				include popups/44-2/popup.jade
+								
+				//-  POPUP 44-3 -//
+				include popups/44-3/popup.jade
+								
+				//-  POPUP 44-4 -//
+				include popups/44-4/popup.jade
+								
+				//-  POPUP 44-5 -//
+				include popups/44-5/popup.jade
+								
+				//-  POPUP 45 -//
+				include popups/45/popup.jade
+								
+				//-  POPUP 46 -//
+				include popups/46/popup.jade
 
-			//-  POPUP 49 -//
-			include popups/49/popup.jade
+				//-  POPUP 49 -//
+				include popups/49/popup.jade
 
-			//-  POPUP 51 -//
-			include popups/51/popup.jade
-						
-			//-  POPUP 53 -//
-			include popups/53/popup.jade
+				//-  POPUP 51 -//
+				include popups/51/popup.jade
+							
+				//-  POPUP 53 -//
+				include popups/53/popup.jade
 						
 		script(src="js/jquery-3.2.1.slim.min.js")
 		script(src="js/swiper.min.js")
